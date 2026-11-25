@@ -1,0 +1,110 @@
+2026-10-04 23:09:54,560 INFO AQUAHOLICS OCS log started | path=/home/alwin/AQUAHOLICS-Communication/OCS_Application/logs/aquaholics_ocs_20261004_230954.log
+2026-10-04 23:09:54,561 INFO ====================================================
+2026-10-04 23:09:54,561 INFO AQUAHOLICS ROBOTX OCS
+2026-10-04 23:09:54,561 INFO ====================================================
+2026-10-04 23:09:54,561 INFO OCS STARTED
+2026-10-04 23:09:54,562 INFO [01] OCS started in REAL NETWORK mode
+2026-10-04 23:09:54,562 INFO      Vehicle telemetry from the vehicle backend: ws://127.0.0.1:5080/linka
+2026-10-04 23:09:54,567 INFO [SCHEMA] protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-04 23:09:54,568 INFO Schema | protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-04 23:09:54,568 INFO [SCHEMA] protobuf runtime: 7.35.0
+2026-10-04 23:09:54,568 INFO Schema | protobuf runtime: 7.35.0
+2026-10-04 23:09:54,569 INFO [VEHICLES] IDs OK: USV1, UAV1 (used in RunDeclaration and report topics, e.g. robocommand/robotx/RMKE/USV1/report)
+2026-10-04 23:09:54,569 INFO Preflight | schema=PASS sha256 d3252516e0e7
+2026-10-04 23:09:54,569 INFO Preflight | vehicles=PASS USV1, UAV1
+2026-10-04 23:09:54,569 INFO Preflight | sequences=PASS independent counter per vehicle verified
+2026-10-04 23:09:54,569 INFO Preflight | team=CONFIRM RMKE
+2026-10-04 23:09:54,569 INFO Preflight | tiers=CONFIRM core/disruptive/disruptive/disruptive
+2026-10-04 23:09:54,569 INFO Preflight | visibility=PASS status line every 5 s
+2026-10-04 23:09:54,569 INFO Preflight | logging=PASS /home/alwin/AQUAHOLICS-Communication/OCS_Application/logs
+2026-10-04 23:09:54,570 INFO Preflight | dhcp=MANUAL operator must verify
+2026-10-04 23:09:54,570 INFO Preflight | bridge=MANUAL operator must verify
+2026-10-04 23:09:54,570 INFO [VEHICLE LINK] connected to the vehicle backend at ws://127.0.0.1:5080/linka
+2026-10-04 23:09:54,572 INFO      Operator display feed (link C): http://127.0.0.1:5081/linkc
+2026-10-04 23:09:54,572 INFO      team_id = RMKE
+2026-10-04 23:09:54,572 INFO      vehicles = USV1, UAV1
+2026-10-04 23:09:54,573 WARNING [VEHICLE] UAV1 link OFF
+2026-10-04 23:09:54,573 INFO      task1 = CORE
+2026-10-04 23:09:54,573 INFO      task2 = DISRUPTIVE
+2026-10-04 23:09:54,574 INFO      task3 = DISRUPTIVE
+2026-10-04 23:09:54,574 INFO      task4 = DISRUPTIVE
+2026-10-04 23:09:54,574 INFO      >>> Operator: confirm team_id and task tiers above before the run <<<
+2026-10-04 23:09:54,574 INFO Startup config | team=RMKE vehicles=['USV1', 'UAV1'] tiers=core/disruptive/disruptive/disruptive local_test=False
+2026-10-04 23:09:54,574 INFO 
+2026-10-04 23:09:54,575 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:09:54,580 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:09:54,580 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:09:54,580 INFO [NETWORK] interface=wlp2s0 ip=192.168.1.11 gateway=192.168.1.1 broker=192.168.1.1
+2026-10-04 23:09:54,581 INFO Network | interface=wlp2s0 ip=192.168.1.11 gateway=192.168.1.1 broker=192.168.1.1 subnet=None robocommand_ip=None
+2026-10-04 23:09:54,581 WARNING [NETWORK] WARNING: expected subnet / RoboCommand IP not configured (--subnet, --robocommand-ip); those checks skipped
+2026-10-04 23:09:54,581 INFO [NETWORK] Manual checks: interface is DHCP, bridging off, Internet sharing off
+2026-10-04 23:09:54,581 INFO [NETWORK] network checks passed
+2026-10-04 23:09:54,581 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:09:54,581 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:09:54,588 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:09:54,589 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:09:54,592 WARNING [VEHICLE] USV1 heartbeat published WITHOUT position (not known by the vehicle backend)
+2026-10-04 23:09:54,592 INFO [VEHICLE] USV1 live telemetry: heartbeats to RoboCommand running
+2026-10-04 23:09:56,589 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:09:56,602 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:09:56,604 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:09:56,604 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:09:56,604 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:09:56,610 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:09:56,611 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:09:58,612 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:09:58,616 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:09:58,616 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:09:58,616 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:09:58,616 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:09:58,620 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:09:58,620 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:10:00,622 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:10:00,629 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:10:00,630 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:10:00,630 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:10:00,630 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:10:00,634 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:10:00,634 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:10:02,635 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:10:02,641 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:10:02,642 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:10:02,644 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:10:02,645 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:10:02,648 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:10:02,649 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:10:04,649 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:10:04,655 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:10:04,655 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:10:04,657 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:10:04,657 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:10:04,663 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:10:04,663 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:10:06,664 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:10:06,672 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:10:06,672 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:10:06,675 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:10:06,678 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:10:06,682 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:10:06,685 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:10:08,685 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:10:08,699 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:10:08,699 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:10:08,700 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:10:08,703 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:10:08,707 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:10:08,708 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:10:10,709 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:10:10,715 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:10:10,715 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:10:10,716 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:10:10,716 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:10:10,719 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:10:10,720 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-04 23:10:12,721 INFO [MQTT STATUS] Waiting for network | checking route to broker=192.168.1.1
+2026-10-04 23:10:12,733 INFO Preflight | subnet=SKIP no --subnet given
+2026-10-04 23:10:12,735 INFO Preflight | gateway=SKIP no --robocommand-ip given
+2026-10-04 23:10:12,735 INFO [MQTT STATUS] Connecting | broker=192.168.1.1:1883
+2026-10-04 23:10:12,736 INFO Connecting to MQTT broker 192.168.1.1:1883...
+2026-10-04 23:10:12,739 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-04 23:10:12,740 WARNING [MQTT] Retrying in 2 seconds...

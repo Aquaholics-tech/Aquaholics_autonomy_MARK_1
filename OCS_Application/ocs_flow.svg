@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 1210" width="2100" height="1210" font-family="'Trebuchet MS','Segoe UI',Verdana,sans-serif">
+<title>AQUAHOLICS OCS - new communication flow</title>
+<defs>
+ <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d0d0d0"/></marker>
+ <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e0a64a"/></marker>
+</defs>
+<rect width="2100" height="1210" fill="#1b1b1b"/>
+<text x="30" y="34" fill="#e8e8e8" font-size="20" font-weight="bold">AQUAHOLICS RobotX 2026 OCS - how the new flow works</text>
+<text x="30" y="52" fill="#9a9a9a" font-size="12">Team vehicles &#8644; Team OCS (this app, the only MQTT client) &#8644; RoboCommand  |  handbook 3.4</text>
+
+<rect x="30" y="70" width="370" height="1040" fill="#2a2a2a" stroke="#3d3d3d"/>
+<text x="215.0" y="92" text-anchor="middle" fill="#bdbdbd" font-size="13">Vehicle side: Mission Planner backend (NEW)</text>
+<rect x="460" y="70" width="830" height="1040" fill="#2a2a2a" stroke="#3d3d3d"/>
+<text x="875.0" y="92" text-anchor="middle" fill="#bdbdbd" font-size="13">OCS side: this application (main.py, Python + paho-mqtt)</text>
+<rect x="1580" y="70" width="480" height="1040" fill="#2a2a2a" stroke="#3d3d3d"/>
+<text x="1820.0" y="92" text-anchor="middle" fill="#bdbdbd" font-size="13">RoboCommand side (other laptop / Robocmd_Application)</text>
+<rect x="60" y="130" width="310" height="70" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="215.0" y="161.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">USV1 / UAV1 autopilots</text>
+<text x="215.0" y="176.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">ArduPilot, MAVLink over serial</text>
+<rect x="60" y="250" width="310" height="70" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="215.0" y="281.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">backend/Bridge.exe</text>
+<text x="215.0" y="296.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">MissionPlanner libs (MAVLinkInterface), built by build.sh</text>
+<rect x="60" y="370" width="310" height="70" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="215.0" y="401.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">Bridge HTTP server :8080</text>
+<text x="215.0" y="416.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">/events (SSE telemetry 10 Hz)  /api/connect /ports /arm</text>
+<rect x="60" y="490" width="310" height="70" rx="5" fill="#2c2416" stroke="#e0a64a" stroke-dasharray="6 4"/>
+<text x="215.0" y="521.5" text-anchor="middle" fill="#f3dcae" font-size="12.5" font-weight="bold">frontend/ operator UI</text>
+<text x="215.0" y="536.5" text-anchor="middle" fill="#c9b58a" font-size="10.5" font-weight="normal">served by Bridge from ../frontend (not in repo yet)</text>
+<rect x="60" y="780" width="310" height="90" rx="5" fill="#2c2416" stroke="#e0a64a" stroke-dasharray="6 4"/>
+<text x="215.0" y="814.0" text-anchor="middle" fill="#f3dcae" font-size="12.5" font-weight="bold">simulation/ (ROBOTX_LOCAL_TEST=1)</text>
+<text x="215.0" y="829.0" text-anchor="middle" fill="#c9b58a" font-size="10.5" font-weight="normal">telemetry.py, task_reports.py,</text>
+<text x="215.0" y="844.0" text-anchor="middle" fill="#c9b58a" font-size="10.5" font-weight="normal">task4_responses.py: fake data for protocol tests only</text>
+<path d="M215,200 L215,250" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<rect x="184.65" y="213.5" width="60.699999999999996" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="215" y="228.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">MAVLink</text>
+<path d="M215,320 L215,370" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="145.0" y="333.5" width="140.0" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="215" y="348.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">MAVLink -&gt; telemetry</text>
+<path d="M215,440 L215,490" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="175.5" y="453.5" width="79.0" height="23" rx="11.5" fill="#1b1b1b" stroke="#e0a64a"/>
+<text x="215" y="468.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">SSE stream</text>
+<rect x="490" y="130" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="605.0" y="156.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">apply_cli_args()</text>
+<text x="605.0" y="171.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">--team-id --task1..4-tier --subnet ...</text>
+<rect x="490" y="228" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="605.0" y="254.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">run_startup_checks()</text>
+<text x="605.0" y="269.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">schema SHA-256, vehicle IDs unique</text>
+<rect x="490" y="326" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="605.0" y="352.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">network_ready()</text>
+<text x="605.0" y="367.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">DHCP gateway = RoboCommand IP, subnet</text>
+<rect x="490" y="424" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="605.0" y="450.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">connect_with_retry()</text>
+<text x="605.0" y="465.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">build_mqtt_client(), port 1883, QoS 1</text>
+<rect x="490" y="522" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="605.0" y="548.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">on_connect()</text>
+<text x="605.0" y="563.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">subscribe course + &lt;team_id&gt;/command</text>
+<path d="M605.0,190 L605.0,228" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M605.0,288 L605.0,326" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M605.0,386 L605.0,424" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M605.0,484 L605.0,522" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<text x="613.0" y="418" fill="#9a9a9a" font-size="10">retry every 2 s until OK</text>
+<text x="613.0" y="516" fill="#9a9a9a" font-size="10">re-run on every reconnect</text>
+<rect x="490" y="816" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="605.0" y="842.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">preflight checklist (17 items)</text>
+<text x="605.0" y="857.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">PASS/FAIL/WAIT/MANUAL + 5 s status line</text>
+<rect x="490" y="914" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="605.0" y="940.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">logger.py -&gt; session log</text>
+<text x="605.0" y="955.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">best-effort, never blocks control</text>
+<rect x="490" y="1012" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="605.0" y="1038.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">../Robocmd_Application/gen/python</text>
+<text x="605.0" y="1053.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">protobuf classes, hash-checked at startup</text>
+<rect x="800" y="424" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="915.0" y="450.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">on_message()</text>
+<text x="915.0" y="465.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">enqueue only (Paho thread)</text>
+<rect x="800" y="522" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="915.0" y="548.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">message_worker()</text>
+<text x="915.0" y="563.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">drop stale/retained, check topic+team</text>
+<rect x="800" y="718" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="915.0" y="744.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">process_course()</text>
+<text x="915.0" y="759.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">decode RxCourse, validate_course()</text>
+<rect x="800" y="816" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="915.0" y="842.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">UAV geofence check</text>
+<text x="915.0" y="857.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">closed, inside course boundary</text>
+<rect x="800" y="914" width="230" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="915.0" y="940.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">send_run_declaration()</text>
+<text x="915.0" y="955.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">vehicles + Task 1-4 tiers + geofence</text>
+<path d="M915.0,484 L915.0,522" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M915.0,582 L915.0,718" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="881.6" y="653.5" width="66.8" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="915.0" y="668.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RxCourse</text>
+<path d="M915.0,778 L915.0,816" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M915.0,876 L915.0,914" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M800,748 L605,748 L605,816" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="600.25" y="771.5" width="109.5" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="655" y="786.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">course decision</text>
+<rect x="1050" y="130" width="210" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1155.0" y="156.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">heartbeat_loop() 2 Hz</text>
+<text x="1155.0" y="171.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">one per vehicle, STATE_AUTO when ready</text>
+<rect x="1050" y="228" width="210" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1155.0" y="254.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">sequence_manager.py</text>
+<text x="1155.0" y="269.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">request seq + independent seq per vehicle</text>
+<rect x="1050" y="718" width="210" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1155.0" y="744.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">process_command()</text>
+<text x="1155.0" y="759.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">decode RxCommand, identity checks</text>
+<rect x="1050" y="816" width="210" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1155.0" y="842.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">RunStart</text>
+<text x="1155.0" y="857.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">check declaration_seq, store run_id</text>
+<rect x="1050" y="914" width="210" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1155.0" y="940.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">Task 4 handler</text>
+<text x="1155.0" y="955.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">ack / readiness / all-clear responses</text>
+<rect x="1050" y="1012" width="210" height="60" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1155.0" y="1038.5" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">task_reports.py</text>
+<text x="1155.0" y="1053.5" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">Task 1-3 reports (real data pending)</text>
+<path d="M1115.0,228 L1115.0,190" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<path d="M1155.0,778 L1155.0,816" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="1183.6" y="785.5" width="66.8" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1217.0" y="800.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RunStart</text>
+<path d="M1260,748 L1274,748 L1274,930 L1260,930" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<text x="1284" y="840" fill="#9a9a9a" font-size="10" transform="rotate(90 1284 840)" text-anchor="middle">Task 4 cmd</text>
+<path d="M1030,552 L1155,552 L1155,718" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="1118.55" y="623.5" width="72.9" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1155" y="638.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RxCommand</text>
+<path d="M370,405 L430,405 L430,108 L1130,108 L1130,130" fill="none" stroke="#e0a64a" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#ar2)"/>
+<rect x="589.35" y="96.5" width="341.29999999999995" height="23" rx="11.5" fill="#1b1b1b" stroke="#e0a64a"/>
+<text x="760" y="111.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">PENDING: real telemetry adapter (Bridge -&gt; heartbeat)</text>
+<path d="M370,835 L446,835 L446,120 L1195,120 L1195,130" fill="none" stroke="#e0a64a" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#ar2)"/>
+<text x="1200" y="116" fill="#e0a64a" font-size="10" text-anchor="start">local test only</text>
+<rect x="1620" y="130" width="360" height="110" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1800.0" y="174.0" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">RoboCommand</text>
+<text x="1800.0" y="189.0" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">rc_test/test_server.py (competition app in event)</text>
+<text x="1800.0" y="204.0" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">publishes course, run-start, Task 4 commands</text>
+<rect x="1620" y="380" width="360" height="340" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1800.0" y="539.0" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">Mosquitto MQTT broker</text>
+<text x="1800.0" y="554.0" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">tcp :1883   topics: robocommand/robotx/#</text>
+<text x="1800.0" y="569.0" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">RoboCommand is the DHCP default gateway</text>
+<rect x="1790" y="800" width="250" height="150" rx="5" fill="#0b2a4d" stroke="#1f5aa0"/>
+<text x="1915.0" y="849.0" text-anchor="middle" fill="#d8e8ff" font-size="12.5" font-weight="bold">Network (3.4.2)</text>
+<text x="1915.0" y="864.0" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">OCS must use DHCP, no static IP</text>
+<text x="1915.0" y="879.0" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">Alpha 192.168.65.2  Bravo .66.2</text>
+<text x="1915.0" y="894.0" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">Charlie .67.2  Delta .68.2</text>
+<text x="1915.0" y="909.0" text-anchor="middle" fill="#9fb6d4" font-size="10.5" font-weight="normal">no Internet on course networks</text>
+<path d="M1800,240 L1800,380" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<rect x="1662.9" y="298.5" width="274.2" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1800" y="313.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">course / commands  &lt;-&gt;  requests / reports</text>
+<path d="M1260,160 L1560,160 L1560,400 L1620,400" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="1269.6" y="140.0" width="310.79999999999995" height="40" rx="9" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1425" y="155.0" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RxReport: heartbeat</text>
+<text x="1425" y="172.0" text-anchor="middle" fill="#d8d8d8" font-size="10.5">robocommand/robotx/&lt;team_id&gt;/&lt;vehicle_id&gt;/report</text>
+<path d="M1620,454 L1030,454" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="1287.65" y="434.0" width="304.7" height="40" rx="9" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1440" y="449.0" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RxCourse (retained): robocommand/robotx/course</text>
+<text x="1440" y="466.0" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RxCommand: robocommand/robotx/&lt;team_id&gt;/command</text>
+<path d="M605.0,582 L605.0,601 L1620,601" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="1295.7" y="589.5" width="298.59999999999997" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1445" y="604.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">connect + subscribe: course, &lt;team_id&gt;/command</text>
+<path d="M1260,958 L1640,958 L1640,720" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="1356.7" y="946.5" width="176.6" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1445" y="961.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RxReport: Task 4 responses</text>
+<path d="M915.0,974 L915.0,992 L1700,992 L1700,720" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="1289.6" y="980.5" width="310.79999999999995" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1445" y="995.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RxRequest: RunDeclaration  .../&lt;team_id&gt;/request</text>
+<path d="M1260,1042 L1760,1042 L1760,720" fill="none" stroke="#d0d0d0" stroke-width="1.3" marker-end="url(#ar)"/>
+<rect x="1356.7" y="1030.5" width="176.6" height="23" rx="11.5" fill="#1b1b1b" stroke="#9aa7b8"/>
+<text x="1445" y="1045.5" text-anchor="middle" fill="#d8d8d8" font-size="10.5">RxReport: Task 1-3 reports</text>
+<rect x="30" y="1130" width="14" height="14" rx="3" fill="#0b2a4d" stroke="#1f5aa0"/><text x="52" y="1142" fill="#bdbdbd" font-size="12">implemented in OCS</text>
+<rect x="200" y="1130" width="14" height="14" rx="3" fill="#2c2416" stroke="#e0a64a" stroke-dasharray="3 2"/><text x="222" y="1142" fill="#bdbdbd" font-size="12">pending / local-test only (dashed amber)</text>
+<text x="30" y="1172" fill="#8f8f8f" font-size="11">Only the OCS talks to RoboCommand. Vehicles never touch the broker. Every message carries correct topic, envelope, team_id, seq, sent_at and vehicle_id where applicable.</text>
+</svg>

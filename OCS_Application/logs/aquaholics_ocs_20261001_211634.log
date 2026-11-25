@@ -1,0 +1,24 @@
+2026-10-01 21:16:34,642 INFO AQUAHOLICS OCS log started | path=/home/alwin/AQUAHOLICS-Communication/OCS_Application/logs/aquaholics_ocs_20261001_211634.log
+2026-10-01 21:16:34,643 INFO ====================================================
+2026-10-01 21:16:34,643 INFO AQUAHOLICS ROBOTX OCS
+2026-10-01 21:16:34,643 INFO ====================================================
+2026-10-01 21:16:34,644 INFO OCS STARTED
+2026-10-01 21:16:34,644 INFO [01] OCS started in REAL NETWORK mode
+2026-10-01 21:16:34,644 INFO      Real vehicle telemetry adapter still required.
+2026-10-01 21:16:34,646 INFO [SCHEMA] protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-01 21:16:34,646 INFO Schema | protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-01 21:16:34,646 INFO [SCHEMA] protobuf runtime: 7.35.0
+2026-10-01 21:16:34,646 INFO Schema | protobuf runtime: 7.35.0
+2026-10-01 21:16:34,646 INFO [VEHICLES] IDs OK: USV1, UAV1 (used in RunDeclaration and report topics, e.g. robocommand/robotx/RMKE/USV1/report)
+2026-10-01 21:16:34,647 INFO Preflight | schema=FAIL protobuf schema does not match the approved release (expecte
+2026-10-01 21:16:34,647 INFO Preflight | vehicles=PASS USV1, UAV1
+2026-10-01 21:16:34,647 INFO Preflight | sequences=PASS independent counter per vehicle verified
+2026-10-01 21:16:34,647 INFO Preflight | team=CONFIRM RMKE
+2026-10-01 21:16:34,647 INFO Preflight | tiers=CONFIRM core/disruptive/disruptive/disruptive
+2026-10-01 21:16:34,647 INFO Preflight | visibility=PASS status line every 5 s
+2026-10-01 21:16:34,647 INFO Preflight | logging=PASS /home/alwin/AQUAHOLICS-Communication/OCS_Application/logs
+2026-10-01 21:16:34,647 INFO Preflight | dhcp=MANUAL operator must verify
+2026-10-01 21:16:34,648 INFO Preflight | bridge=MANUAL operator must verify
+2026-10-01 21:16:34,648 ERROR [SCHEMA] CHECK FAILED: protobuf schema does not match the approved release (expected abc, got d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9)
+2026-10-01 21:16:34,648 ERROR Schema check failed | protobuf schema does not match the approved release (expected abc, got d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9)
+2026-10-01 21:16:34,648 ERROR [STARTUP] Startup checks failed; OCS not started.

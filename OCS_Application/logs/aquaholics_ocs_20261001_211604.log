@@ -1,0 +1,70 @@
+2026-10-01 21:16:04,256 INFO AQUAHOLICS OCS log started | path=/home/alwin/AQUAHOLICS-Communication/OCS_Application/logs/aquaholics_ocs_20261001_211604.log
+2026-10-01 21:16:04,256 INFO ====================================================
+2026-10-01 21:16:04,257 INFO AQUAHOLICS ROBOTX OCS
+2026-10-01 21:16:04,257 INFO ====================================================
+2026-10-01 21:16:04,257 INFO OCS STARTED
+2026-10-01 21:16:04,257 INFO [01] OCS started in REAL NETWORK mode
+2026-10-01 21:16:04,257 INFO      Real vehicle telemetry adapter still required.
+2026-10-01 21:16:04,259 INFO [SCHEMA] protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-01 21:16:04,259 INFO Schema | protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-01 21:16:04,259 INFO [SCHEMA] protobuf runtime: 7.35.0
+2026-10-01 21:16:04,259 INFO Schema | protobuf runtime: 7.35.0
+2026-10-01 21:16:04,259 INFO [VEHICLES] IDs OK: USV1, UAV1 (used in RunDeclaration and report topics, e.g. robocommand/robotx/RMKE/USV1/report)
+2026-10-01 21:16:04,259 INFO Preflight | schema=PASS sha256 d3252516e0e7
+2026-10-01 21:16:04,260 INFO Preflight | vehicles=PASS USV1, UAV1
+2026-10-01 21:16:04,260 INFO Preflight | sequences=PASS independent counter per vehicle verified
+2026-10-01 21:16:04,260 INFO Preflight | team=CONFIRM RMKE
+2026-10-01 21:16:04,260 INFO Preflight | tiers=CONFIRM core/disruptive/disruptive/disruptive
+2026-10-01 21:16:04,260 INFO Preflight | visibility=PASS status line every 5 s
+2026-10-01 21:16:04,260 INFO Preflight | logging=PASS /home/alwin/AQUAHOLICS-Communication/OCS_Application/logs
+2026-10-01 21:16:04,260 INFO Preflight | dhcp=MANUAL operator must verify
+2026-10-01 21:16:04,260 INFO Preflight | bridge=MANUAL operator must verify
+2026-10-01 21:16:04,261 INFO      team_id = RMKE
+2026-10-01 21:16:04,261 INFO      vehicles = USV1, UAV1
+2026-10-01 21:16:04,261 INFO      task1 = CORE
+2026-10-01 21:16:04,261 INFO      task2 = DISRUPTIVE
+2026-10-01 21:16:04,261 INFO      task3 = DISRUPTIVE
+2026-10-01 21:16:04,261 INFO      task4 = DISRUPTIVE
+2026-10-01 21:16:04,261 INFO      >>> Operator: confirm team_id and task tiers above before the run <<<
+2026-10-01 21:16:04,262 INFO Startup config | team=RMKE vehicles=['USV1', 'UAV1'] tiers=core/disruptive/disruptive/disruptive local_test=False
+2026-10-01 21:16:04,262 INFO 
+2026-10-01 21:16:04,262 INFO [MQTT STATUS] Waiting for network | checking route to broker=10.94.250.100
+2026-10-01 21:16:04,271 INFO Preflight | subnet=FAIL local IP 10.94.250.100 is not in expected subnet 192.168.99.
+2026-10-01 21:16:04,271 INFO Preflight | gateway=PASS gateway 10.94.250.100
+2026-10-01 21:16:04,271 INFO [NETWORK] interface=lo ip=10.94.250.100 gateway=10.94.250.100 broker=10.94.250.100
+2026-10-01 21:16:04,271 INFO Network | interface=lo ip=10.94.250.100 gateway=10.94.250.100 broker=10.94.250.100 subnet=192.168.99.0/24 robocommand_ip=10.94.250.100
+2026-10-01 21:16:04,271 INFO [NETWORK] Manual checks: interface is DHCP, bridging off, Internet sharing off
+2026-10-01 21:16:04,272 ERROR [NETWORK] CHECK FAILED: local IP 10.94.250.100 is not in expected subnet 192.168.99.0/24
+2026-10-01 21:16:04,272 ERROR Network check failed | local IP 10.94.250.100 is not in expected subnet 192.168.99.0/24
+2026-10-01 21:16:04,272 INFO ==================================================================
+2026-10-01 21:16:04,272 INFO PREFLIGHT CHECKLIST (network check failed)
+2026-10-01 21:16:04,273 INFO ==================================================================
+2026-10-01 21:16:04,273 INFO  1. [MANUAL ] RoboCommand-facing interface set to DHCP - operator must verify
+2026-10-01 21:16:04,273 INFO  2. [MANUAL ] Bridging / Internet sharing disabled - operator must verify
+2026-10-01 21:16:04,273 ERROR  3. [FAIL   ] OCS address in assigned course subnet - local IP 10.94.250.100 is not in expected subn
+2026-10-01 21:16:04,273 INFO  4. [PASS   ] Default gateway = RoboCommand address - gateway 10.94.250.100
+2026-10-01 21:16:04,273 INFO  5. [WAIT   ] MQTT client connected
+2026-10-01 21:16:04,274 INFO  6. [WAIT   ] Subscribed to course topic
+2026-10-01 21:16:04,274 INFO  7. [WAIT   ] Subscribed to team command topic
+2026-10-01 21:16:04,274 INFO  8. [WAIT   ] Retained RxCourse received and decoded
+2026-10-01 21:16:04,274 INFO  9. [WAIT   ] Course ID and boundary checked
+2026-10-01 21:16:04,274 INFO 10. [PASS   ] Approved protobuf schema release - sha256 d3252516e0e7
+2026-10-01 21:16:04,274 INFO 11. [CONFIRM] Assigned team_id configured - RMKE
+2026-10-01 21:16:04,275 INFO 12. [PASS   ] Vehicle IDs unique and consistent - USV1, UAV1
+2026-10-01 21:16:04,275 INFO 13. [PASS   ] Independent per-vehicle report sequences - independent counter per vehicle verified
+2026-10-01 21:16:04,275 INFO 14. [WAIT   ] UAV geofence closed, inside course boundary
+2026-10-01 21:16:04,275 INFO 15. [CONFIRM] Task tiers in RunDeclaration - core/disruptive/disruptive/disruptive
+2026-10-01 21:16:04,275 INFO 16. [PASS   ] Operator sees connection / command status - status line every 5 s
+2026-10-01 21:16:04,275 INFO 17. [PASS   ] Logging enabled for the run - /home/alwin/AQUAHOLICS-Communication/OCS_Application/log
+2026-10-01 21:16:04,276 INFO ------------------------------------------------------------------
+2026-10-01 21:16:04,276 INFO 6/17 verified | overall: FAIL
+2026-10-01 21:16:04,276 INFO ==================================================================
+2026-10-01 21:16:04,276 INFO [MQTT STATUS] Waiting for network | network check failed
+2026-10-01 21:16:06,277 INFO [MQTT STATUS] Waiting for network | checking route to broker=10.94.250.100
+2026-10-01 21:16:06,282 INFO Preflight | subnet=FAIL local IP 10.94.250.100 is not in expected subnet 192.168.99.
+2026-10-01 21:16:06,282 INFO Preflight | gateway=PASS gateway 10.94.250.100
+2026-10-01 21:16:06,282 INFO [MQTT STATUS] Waiting for network | network check failed
+2026-10-01 21:16:08,283 INFO [MQTT STATUS] Waiting for network | checking route to broker=10.94.250.100
+2026-10-01 21:16:08,289 INFO Preflight | subnet=FAIL local IP 10.94.250.100 is not in expected subnet 192.168.99.
+2026-10-01 21:16:08,290 INFO Preflight | gateway=PASS gateway 10.94.250.100
+2026-10-01 21:16:08,290 INFO [MQTT STATUS] Waiting for network | network check failed

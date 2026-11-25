@@ -1,0 +1,240 @@
+// Link B messages, backend -> frontend, as JSON text frames. The shapes match
+// frontend/src/lib/telemetry.ts (LinkBMsg); `t` is the backend clock, Unix ms.
+//   att        {ch:'att', vehicle, t, r, p, y}                 FAST, degrees, on every ATTITUDE (logic 0)
+//   status     {ch:'status', vehicle, t, cs:{...}}             SLOW, 2 Hz, only while the link is LIVE (logic 8)
+//   params     {ch:'params', vehicle, params:{BATT_*...}}       logic 6
+//   statustext {ch:'statustext', vehicle, t, severity, text}   logic 7
+//   backend    {ch:'backend', t, links:{USV1:{state, error, port, baud, sysid}}, ports:[{path, label}]}
+//              1 Hz and on every link change (ports: link B only)
+//   modes      {ch:'modes', vehicle, modes:[...]}               logic 9: on connect (MP's names)
+//   cmdack     {ch:'cmdack', vehicle, id, cmd, status, detail, t} logic 9: every command update
+//   missionack {ch:'missionack', vehicle, id, cmd, status, detail, current, total, t}
+//              phase 3: every mission transfer update (sent, progress*, then one final status)
+//   mission    {ch:'mission', vehicle, home:{lat,lng,alt}|null, wps:[{cmd,frame,p:[p1..p4],lat,lng,alt}]}
+//              phase 3: the downloaded mission, once per successful mission_read
+// Frontend -> backend (logic 9):
+//   cmd        {ch:'cmd', id, vehicle, cmd:'arm'|'disarm'|'mode', mode?}
+//   connect    {ch:'connect', id, vehicle, port, baud, sysid?}   connect a vehicle slot to a port
+//   disconnect {ch:'disconnect', id, vehicle}                    answered with cmdack (cmd connect/disconnect)
+// Frontend -> backend (phase 3):
+//   mission_write {ch:'mission_write', id, vehicle, home:{lat,lng,alt}|null, wps:[{cmd,frame,p,lat,lng,alt}]}
+//   mission_read  {ch:'mission_read', id, vehicle}               both answered with missionack
+using System.Reflection;
+using System.Text.Json;
+using MissionPlanner;
+
+namespace Ocs.Backend;
+
+public static class LinkBMessages
+{
+    /// <summary>
+    /// The CurrentState fields the SLOW snapshot carries: frontend/src/lib/currentState.ts
+    /// (CurrentStateFields), same names, same order. A test checks the two lists match.
+    /// </summary>
+    public static readonly string[] SlowFields =
+    {
+        "armed", "mode", "failsafe", "safetyactive", "prearmstatus", "ekfstatus", "landed_state",
+        "groundspeed", "airspeed", "verticalspeed", "groundcourse", "turnrate",
+        "lat", "lng", "alt", "HomeAlt", "DistToHome",
+        "wpno", "wp_dist", "nav_bearing", "nav_roll", "nav_pitch", "targetalt", "targetairspeed", "xtrack_error",
+        "battery_voltage", "battery_remaining", "current",
+        "gpsstatus", "satcount", "gpshdop",
+        "linkqualitygcs", "load", "vibex", "vibey", "vibez",
+        "messageHigh", "messageHighSeverity",
+    };
+
+    private static readonly PropertyInfo[] SlowProps = SlowFields
+        .Select(f => typeof(CurrentState).GetProperty(f, BindingFlags.Public | BindingFlags.Instance)
+                     ?? throw new MissingMemberException(nameof(CurrentState), f))
+        .ToArray();
+
+    public static long Now() => DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
+
+    public static byte[] Attitude(string vehicle, long t, double r, double p, double y) => Write(w =>
+    {
+        w.WriteString("ch", "att");
+        w.WriteString("vehicle", vehicle);
+        w.WriteNumber("t", t);
+        w.WriteNumber("r", Math.Round(r, 2));
+        w.WriteNumber("p", Math.Round(p, 2));
+        w.WriteNumber("y", Math.Round(y, 2));
+    });
+
+    /// <summary>
+    /// SLOW snapshot. A field that cannot be read, or is NaN/infinite, is left out: the frontend
+    /// shows a missing field as '—', never as a made-up number.
+    /// </summary>
+    public static byte[] Status(string vehicle, long t, CurrentState cs) => Write(w =>
+    {
+        w.WriteString("ch", "status");
+        w.WriteString("vehicle", vehicle);
+        w.WriteNumber("t", t);
+        w.WriteStartObject("cs");
+        for (var i = 0; i < SlowProps.Length; i++)
+        {
+            object? value;
+            try { value = SlowProps[i].GetValue(cs); }
+            catch { continue; }
+            WriteValue(w, SlowFields[i], value);
+        }
+        w.WriteEndObject();
+    });
+
+    public static byte[] Params(string vehicle, IReadOnlyDictionary<string, float> values) => Write(w =>
+    {
+        w.WriteString("ch", "params");
+        w.WriteString("vehicle", vehicle);
+        w.WriteStartObject("params");
+        foreach (var (name, value) in values)
+            WriteValue(w, name, value);
+        w.WriteEndObject();
+    });
+
+    public static byte[] StatusText(string vehicle, StatusText st) => Write(w =>
+    {
+        w.WriteString("ch", "statustext");
+        w.WriteString("vehicle", vehicle);
+        w.WriteNumber("t", st.T);
+        w.WriteNumber("severity", st.Severity);
+        w.WriteString("text", st.Text);
+    });
+
+    public static byte[] Modes(string vehicle, IReadOnlyList<string> modes) => Write(w =>
+    {
+        w.WriteString("ch", "modes");
+        w.WriteString("vehicle", vehicle);
+        w.WriteStartArray("modes");
+        foreach (var m in modes)
+            w.WriteStringValue(m);
+        w.WriteEndArray();
+    });
+
+    public static byte[] CmdAck(string vehicle, CommandUpdate u, long t) => Write(w =>
+    {
+        w.WriteString("ch", "cmdack");
+        w.WriteString("vehicle", vehicle);
+        w.WriteString("id", u.Id);
+        w.WriteString("cmd", u.Kind);
+        w.WriteString("status", u.Status);
+        w.WriteString("detail", u.Detail);
+        w.WriteNumber("t", t);
+    });
+
+    public static byte[] MissionAck(string vehicle, MissionUpdate u, long t) => Write(w =>
+    {
+        w.WriteString("ch", "missionack");
+        w.WriteString("vehicle", vehicle);
+        w.WriteString("id", u.Id);
+        w.WriteString("cmd", u.Kind);
+        w.WriteString("status", u.Status);
+        w.WriteString("detail", u.Detail);
+        w.WriteNumber("current", u.Current);
+        w.WriteNumber("total", u.Total);
+        w.WriteNumber("t", t);
+    });
+
+    /// <summary>Item 0 of a successful read is home (frame 0, per toWpl's convention); the rest are wps.</summary>
+    public static byte[] Mission(string vehicle, MissionResult r) => Write(w =>
+    {
+        w.WriteString("ch", "mission");
+        w.WriteString("vehicle", vehicle);
+        var items = r.Items;
+        var hasHome = items.Count > 0 && items[0].Frame == 0;
+        if (hasHome)
+        {
+            var h = items[0];
+            w.WriteStartObject("home");
+            w.WriteNumber("lat", h.Lat);
+            w.WriteNumber("lng", h.Lng);
+            w.WriteNumber("alt", h.Alt);
+            w.WriteEndObject();
+        }
+        else
+        {
+            w.WriteNull("home");
+        }
+        w.WriteStartArray("wps");
+        for (var i = hasHome ? 1 : 0; i < items.Count; i++)
+        {
+            var wp = items[i];
+            w.WriteStartObject();
+            w.WriteNumber("cmd", wp.Cmd);
+            w.WriteNumber("frame", wp.Frame);
+            w.WriteStartArray("p");
+            w.WriteNumberValue(wp.P1);
+            w.WriteNumberValue(wp.P2);
+            w.WriteNumberValue(wp.P3);
+            w.WriteNumberValue(wp.P4);
+            w.WriteEndArray();
+            w.WriteNumber("lat", wp.Lat);
+            w.WriteNumber("lng", wp.Lng);
+            w.WriteNumber("alt", wp.Alt);
+            w.WriteEndObject();
+        }
+        w.WriteEndArray();
+    });
+
+    public static byte[] Backend(long t, IEnumerable<VehicleLink> links, IReadOnlyList<SerialPortInfo>? ports = null) => Write(w =>
+    {
+        w.WriteString("ch", "backend");
+        w.WriteNumber("t", t);
+        w.WriteStartObject("links");
+        foreach (var link in links)
+        {
+            w.WriteStartObject(link.Name);
+            w.WriteString("state", link.State.ToString().ToLowerInvariant());
+            if (link.Error is { } error)
+                w.WriteString("error", error);
+            else
+                w.WriteNull("error");
+            if (link.Config is { } c)
+            {
+                w.WriteString("port", c.Port);
+                w.WriteNumber("baud", c.Baud);
+                if (c.ExpectedSysId is { } sysid)
+                    w.WriteNumber("sysid", sysid);
+            }
+            w.WriteEndObject();
+        }
+        w.WriteEndObject();
+        if (ports != null)
+        {
+            w.WriteStartArray("ports");
+            foreach (var p in ports)
+            {
+                w.WriteStartObject();
+                w.WriteString("path", p.Path);
+                w.WriteString("label", p.Label);
+                w.WriteEndObject();
+            }
+            w.WriteEndArray();
+        }
+    });
+
+    private static void WriteValue(Utf8JsonWriter w, string name, object? value)
+    {
+        switch (value)
+        {
+            case bool b: w.WriteBoolean(name, b); break;
+            case string s: w.WriteString(name, s); break;
+            case Enum e: w.WriteNumber(name, Convert.ToInt64(e)); break;
+            case float f when float.IsFinite(f): w.WriteNumber(name, f); break;
+            case double d when double.IsFinite(d): w.WriteNumber(name, d); break;
+            case byte or sbyte or short or ushort or int or uint or long:
+                w.WriteNumber(name, Convert.ToInt64(value)); break;
+            // null, non-finite, anything else: left out
+        }
+    }
+
+    private static byte[] Write(Action<Utf8JsonWriter> body)
+    {
+        var buffer = new System.Buffers.ArrayBufferWriter<byte>(256);
+        using (var w = new Utf8JsonWriter(buffer))
+        {
+            w.WriteStartObject();
+            body(w);
+            w.WriteEndObject();
+        }
+        return buffer.WrittenSpan.ToArray();
+    }
+}

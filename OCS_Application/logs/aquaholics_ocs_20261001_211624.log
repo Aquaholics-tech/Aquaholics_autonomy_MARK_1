@@ -1,0 +1,92 @@
+2026-10-01 21:16:24,590 INFO AQUAHOLICS OCS log started | path=/home/alwin/AQUAHOLICS-Communication/OCS_Application/logs/aquaholics_ocs_20261001_211624.log
+2026-10-01 21:16:24,591 INFO ====================================================
+2026-10-01 21:16:24,591 INFO AQUAHOLICS ROBOTX OCS
+2026-10-01 21:16:24,592 INFO ====================================================
+2026-10-01 21:16:24,592 INFO OCS STARTED
+2026-10-01 21:16:24,592 INFO [01] OCS started in REAL NETWORK mode
+2026-10-01 21:16:24,592 INFO      Real vehicle telemetry adapter still required.
+2026-10-01 21:16:24,594 INFO [SCHEMA] protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-01 21:16:24,594 INFO Schema | protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-01 21:16:24,595 INFO [SCHEMA] protobuf runtime: 7.35.0
+2026-10-01 21:16:24,595 INFO Schema | protobuf runtime: 7.35.0
+2026-10-01 21:16:24,595 INFO [VEHICLES] IDs OK: USV1, UAV1 (used in RunDeclaration and report topics, e.g. robocommand/robotx/RMKE/USV1/report)
+2026-10-01 21:16:24,595 INFO Preflight | schema=PASS sha256 d3252516e0e7
+2026-10-01 21:16:24,595 INFO Preflight | vehicles=PASS USV1, UAV1
+2026-10-01 21:16:24,596 INFO Preflight | sequences=PASS independent counter per vehicle verified
+2026-10-01 21:16:24,596 INFO Preflight | team=CONFIRM RMKE
+2026-10-01 21:16:24,596 INFO Preflight | tiers=CONFIRM core/disruptive/disruptive/disruptive
+2026-10-01 21:16:24,596 INFO Preflight | visibility=PASS status line every 5 s
+2026-10-01 21:16:24,596 INFO Preflight | logging=PASS /home/alwin/AQUAHOLICS-Communication/OCS_Application/logs
+2026-10-01 21:16:24,596 INFO Preflight | dhcp=MANUAL operator must verify
+2026-10-01 21:16:24,596 INFO Preflight | bridge=MANUAL operator must verify
+2026-10-01 21:16:24,597 INFO      team_id = RMKE
+2026-10-01 21:16:24,597 INFO      vehicles = USV1, UAV1
+2026-10-01 21:16:24,597 INFO      task1 = CORE
+2026-10-01 21:16:24,597 INFO      task2 = DISRUPTIVE
+2026-10-01 21:16:24,597 INFO      task3 = DISRUPTIVE
+2026-10-01 21:16:24,597 INFO      task4 = DISRUPTIVE
+2026-10-01 21:16:24,597 INFO      >>> Operator: confirm team_id and task tiers above before the run <<<
+2026-10-01 21:16:24,598 INFO Startup config | team=RMKE vehicles=['USV1', 'UAV1'] tiers=core/disruptive/disruptive/disruptive local_test=False
+2026-10-01 21:16:24,598 INFO 
+2026-10-01 21:16:24,598 INFO [MQTT STATUS] Waiting for network | checking route to broker=10.94.250.100
+2026-10-01 21:16:24,608 INFO Preflight | subnet=PASS 10.94.250.100 in 10.94.250.0/24
+2026-10-01 21:16:24,608 INFO Preflight | gateway=PASS gateway 10.94.250.100
+2026-10-01 21:16:24,608 INFO [NETWORK] interface=lo ip=10.94.250.100 gateway=10.94.250.100 broker=10.94.250.100
+2026-10-01 21:16:24,608 INFO Network | interface=lo ip=10.94.250.100 gateway=10.94.250.100 broker=10.94.250.100 subnet=10.94.250.0/24 robocommand_ip=10.94.250.100
+2026-10-01 21:16:24,608 INFO [NETWORK] Manual checks: interface is DHCP, bridging off, Internet sharing off
+2026-10-01 21:16:24,609 INFO [NETWORK] network checks passed
+2026-10-01 21:16:24,609 INFO [MQTT STATUS] Connecting | broker=10.94.250.100:1884
+2026-10-01 21:16:24,609 INFO Connecting to MQTT broker 10.94.250.100:1884...
+2026-10-01 21:16:24,613 INFO [MQTT STATUS] Connected | broker=10.94.250.100:1884
+2026-10-01 21:16:24,613 INFO Preflight | mqtt=PASS 10.94.250.100:1884
+2026-10-01 21:16:24,613 INFO MQTT connected | broker=10.94.250.100:1884 connection=1
+2026-10-01 21:16:24,614 INFO [02] MQTT connection established
+2026-10-01 21:16:24,614 INFO Preflight | sub_course=PASS robocommand/robotx/course
+2026-10-01 21:16:24,614 INFO Preflight | sub_command=PASS robocommand/robotx/RMKE/command
+2026-10-01 21:16:24,614 INFO [03] Subscribed:
+2026-10-01 21:16:24,615 INFO      robocommand/robotx/course
+2026-10-01 21:16:24,615 INFO [04] Subscribed:
+2026-10-01 21:16:24,615 INFO      robocommand/robotx/RMKE/command
+2026-10-01 21:16:24,615 INFO MQTT subscriptions | course_topic=robocommand/robotx/course rc=0 | command_topic=robocommand/robotx/RMKE/command rc=0
+2026-10-01 21:16:24,617 INFO MQTT RX | topic=robocommand/robotx/course | bytes=130 | retained=True
+2026-10-01 21:16:24,617 INFO [05] RxCourse received
+2026-10-01 21:16:24,618 INFO [06] RxCourse decoded
+2026-10-01 21:16:24,618 INFO Preflight | rx_course=PASS course 'ALPHA_TEST'
+2026-10-01 21:16:24,618 INFO Course validated | course_id=ALPHA_TEST corners=5 pinger_hz=25000
+2026-10-01 21:16:24,618 INFO [07] Course configuration validated
+2026-10-01 21:16:24,619 INFO Preflight | course_check=PASS id 'ALPHA_TEST', 5 corners
+2026-10-01 21:16:24,619 INFO 
+2026-10-01 21:16:24,619 INFO ====================================================
+2026-10-01 21:16:24,619 INFO COURSE INFORMATION
+2026-10-01 21:16:24,619 INFO ====================================================
+2026-10-01 21:16:24,620 INFO Course ID       : ALPHA_TEST
+2026-10-01 21:16:24,620 INFO Pinger Frequency: 25000 Hz
+2026-10-01 21:16:24,620 INFO Course Corners  : 5
+2026-10-01 21:16:24,620 INFO ====================================================
+2026-10-01 21:16:24,621 ERROR [ERROR] RunDeclaration BLOCKED: geofence is not closed (first point must equal last point)
+2026-10-01 21:16:24,621 ERROR RunDeclaration blocked | geofence is not closed (first point must equal last point)
+2026-10-01 21:16:24,621 INFO Preflight | geofence=FAIL geofence is not closed (first point must equal last point)
+2026-10-01 21:16:24,621 INFO ==================================================================
+2026-10-01 21:16:24,622 INFO PREFLIGHT CHECKLIST (RunDeclaration blocked)
+2026-10-01 21:16:24,622 INFO ==================================================================
+2026-10-01 21:16:24,622 INFO  1. [MANUAL ] RoboCommand-facing interface set to DHCP - operator must verify
+2026-10-01 21:16:24,622 INFO  2. [MANUAL ] Bridging / Internet sharing disabled - operator must verify
+2026-10-01 21:16:24,622 INFO  3. [PASS   ] OCS address in assigned course subnet - 10.94.250.100 in 10.94.250.0/24
+2026-10-01 21:16:24,622 INFO  4. [PASS   ] Default gateway = RoboCommand address - gateway 10.94.250.100
+2026-10-01 21:16:24,623 INFO  5. [PASS   ] MQTT client connected - 10.94.250.100:1884
+2026-10-01 21:16:24,623 INFO  6. [PASS   ] Subscribed to course topic - robocommand/robotx/course
+2026-10-01 21:16:24,623 INFO  7. [PASS   ] Subscribed to team command topic - robocommand/robotx/RMKE/command
+2026-10-01 21:16:24,623 INFO  8. [PASS   ] Retained RxCourse received and decoded - course 'ALPHA_TEST'
+2026-10-01 21:16:24,623 INFO  9. [PASS   ] Course ID and boundary checked - id 'ALPHA_TEST', 5 corners
+2026-10-01 21:16:24,623 INFO 10. [PASS   ] Approved protobuf schema release - sha256 d3252516e0e7
+2026-10-01 21:16:24,623 INFO 11. [CONFIRM] Assigned team_id configured - RMKE
+2026-10-01 21:16:24,624 INFO 12. [PASS   ] Vehicle IDs unique and consistent - USV1, UAV1
+2026-10-01 21:16:24,624 INFO 13. [PASS   ] Independent per-vehicle report sequences - independent counter per vehicle verified
+2026-10-01 21:16:24,624 ERROR 14. [FAIL   ] UAV geofence closed, inside course boundary - geofence is not closed (first point must
+2026-10-01 21:16:24,624 INFO 15. [CONFIRM] Task tiers in RunDeclaration - core/disruptive/disruptive/disruptive
+2026-10-01 21:16:24,624 INFO 16. [PASS   ] Operator sees connection / command status - status line every 5 s
+2026-10-01 21:16:24,624 INFO 17. [PASS   ] Logging enabled for the run - /home/alwin/AQUAHOLICS-Communication/OCS_Application/log
+2026-10-01 21:16:24,624 INFO ------------------------------------------------------------------
+2026-10-01 21:16:24,625 INFO 12/17 verified | overall: FAIL
+2026-10-01 21:16:24,625 INFO ==================================================================
+2026-10-01 21:16:25,611 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 12/17 FAIL | dropped_messages=0 | stale_messages=0

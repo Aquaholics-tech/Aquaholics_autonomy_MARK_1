@@ -1,0 +1,227 @@
+# AQUAHOLICS RobotX 2026 OCS
+
+The OCS application communicates with RoboCommand over MQTT using the RobotX
+protobuf messages. This folder contains the OCS client; RoboCommand runs
+separately (for example, on another laptop).
+
+## Implemented workflow
+
+- Finds the DHCP-provided IPv4 default gateway when `ROBOTX_BROKER` is unset,
+  checks the route and the course network (subnet, gateway), then connects to MQTT. It retries while network or broker
+  connectivity is unavailable.
+- Restores the course and team command subscriptions after reconnecting.
+- Receives and validates `RxCourse` messages, then sends a `RunDeclaration`.
+- Publishes USV1 and UAV1 heartbeat reports with independent per-vehicle
+  sequence numbers. Task report publishers use those same per-vehicle counters.
+- Receives `RunStart`, checks its declaration sequence, and stores its run ID.
+- Handles supported Task 4 commands, rejects malformed or unexpected command
+  payloads, checks team and vehicle identities, and reports response status.
+- Ignores retained commands and discards queued messages from a disconnected
+  MQTT connection to reduce the chance of reusing stale messages.
+- Logs connection state, subscriptions, received commands, publications,
+  sequence numbers, and parsing/validation errors. Console status remains
+  available if file logging fails.
+- Real mode: publishes heartbeats from real vehicle telemetry, received from
+  the vehicle backend over link A (see "Vehicle telemetry (link A)").
+
+## Still pending
+
+- Vehicle command adapters. Local test mode still simulates telemetry and task
+  responses for protocol testing.
+- The source of `Heartbeat.current_task` (TASK_NONE until it is decided).
+- Passing validated course data into the navigation/vehicle control system.
+- Integration with the separately running RoboCommand application on the
+  other laptop.
+
+## Running the OCS
+
+The default is **real mode**: no simulated telemetry or task reports, no
+automatic Task 4 ReadinessReport, and no `localhost` fallback. Do not enable simulation with
+competition vehicles.
+
+```bash
+python3 main.py --team-id <ID> --subnet 192.168.10.0/24 --robocommand-ip 192.168.10.1 \
+                --task1-tier core --task2-tier disruptive \
+                --task3-tier disruptive --task4-tier disruptive
+```
+
+### Command-line flags (per-event values)
+
+| Flag | Environment variable | Meaning |
+|---|---|---|
+| `--team-id ID` | `ROBOTX_TEAM_ID` | Assigned team ID (default in `config.py`) |
+| `--task1-tier` .. `--task4-tier` | `ROBOTX_TASK1_TIER` .. `ROBOTX_TASK4_TIER` | `none`, `core`, `advanced` or `disruptive` |
+| `--course-id ID` | `ROBOTX_COURSE_ID` | Expected course ID; a different received `course_id` is rejected |
+| `--uav-geofence FILE` | `ROBOTX_UAV_GEOFENCE` | JSON file `[[lat, lon], ...]`, closed ring; required in real mode |
+| `--subnet CIDR` | `ROBOTX_SUBNET` | Expected course subnet |
+| `--robocommand-ip IP` | `ROBOTX_ROBOCOMMAND_IP` | Expected RoboCommand IP (the default gateway) |
+
+Flags override environment variables. The team ID and tiers are printed and
+logged at startup so the operator can confirm them. `python3 main.py --help`
+lists the flags.
+
+### Environment-only options
+
+| Variable | Default | Meaning |
+|---|---|---|
+| `ROBOTX_LOCAL_TEST` | `0` | `1` enables local simulation (fake telemetry, reports, automatic Task 4 readiness) and the `localhost` fallback |
+| `ROBOTX_AUTO_REPORT_TEST` | `1` | With local test on, `0` disables automatic fake task reports |
+| `ROBOTX_AUTO_TASK4_RESPONSES` | `1` | With local test on, `0` stops the automatic ReadinessReport (IncidentAcks are always automatic) |
+| `ROBOTX_BROKER` | DHCP gateway | Broker hostname or IP override |
+| `ROBOTX_PORT` | `1883` | Broker port |
+| `ROBOTX_NETWORK_STRICT` | `1` | `0` turns network-check failures into warnings |
+| `ROBOTX_VEHICLE_BACKEND` | `ws://127.0.0.1:5080/linka` | Link A address of the vehicle backend (real mode) |
+| `ROBOTX_LINKC_PORT` | `5081` | Port of the operator display feed (link C) on 127.0.0.1 |
+
+Example, against the Robocmd simulator on the same machine:
+
+```bash
+ROBOTX_LOCAL_TEST=1 python3 main.py                 # simulated data
+ROBOTX_BROKER=127.0.0.1 python3 main.py             # real mode, local broker
+```
+
+### Course validation
+
+A received `RxCourse` is rejected unless: `course_id` matches `--course-id`
+(skipped with a warning if not given); the boundary has at least 3 distinct
+corners with valid lat/lon; the boundary has non-zero area and does not
+self-intersect (an explicitly closed ring that repeats its first point is
+accepted); and the timestamp is present. A validated course is stored
+(`get_validated_course()` in `main.py`) for later steps.
+
+### UAV geofence
+
+Real mode needs `--uav-geofence uav_geofence.json`, a JSON list of
+`[lat, lon]` points with the first point repeated as the last. Before the
+`RunDeclaration` is sent it must be closed, have at least 3 distinct points
+with non-zero area and no self-intersection, lie entirely inside the received
+course boundary (points on the edge count as inside, and no geofence edge may
+cross the boundary). If any check fails, or no geofence is configured, the
+`RunDeclaration` is blocked with an error and retried when the course is received
+again. In local test mode with no file, a test geofence is derived from the course
+(shrunk to 50% about its centre) so the simulator courses work.
+
+### Schema and vehicle ID checks
+
+At startup the OCS hashes the generated protobuf files
+(`../Robocmd_Application/gen/python`) and compares the SHA-256 with
+`APPROVED_SCHEMA_HASH` in `config.py`; the hash and protobuf runtime version
+are printed and logged. A mismatch blocks startup in real mode (warning in
+local test mode). Print the current hash with `python3 startup_checks.py`, and
+update `APPROVED_SCHEMA_HASH` when a new schema release is approved
+(`ROBOTX_SCHEMA_HASH` overrides it). The vehicle IDs must be non-empty, unique,
+free of whitespace and MQTT wildcard characters, equal to `[USV_ID, UAV_ID]`,
+and round-trip through their report topic; `RunDeclaration` and heartbeats
+both use the single `VEHICLE_IDS` list. A failure stops the OCS.
+
+### Preflight checklist and status line
+
+When the course decision is made (`RunDeclaration` allowed or blocked, course
+rejected, or a network check failed) the OCS prints a one-screen checklist of
+the 17 pre-run items and logs each result. Statuses: `PASS` (verified),
+`FAIL`, `WAIT` (not checked yet), `SKIP` (cannot check: expected value not
+given or loopback broker), `MANUAL` (DHCP mode, bridging/Internet sharing:
+operator must verify) and `CONFIRM` (team ID and task tiers: operator must
+confirm the value shown). The 5-second status line shows the connection state,
+the last command and its outcome counts, and the checklist summary, for example
+`[MQTT CURRENT STATE] Connected | run=1 | command: accepted RunStart seq=1
+(ok=1 rejected=0 ignored=0) | preflight 13/17 CONFIRM | ...`.
+
+## Vehicle telemetry (link A)
+
+In real mode the OCS connects at startup to the vehicle backend
+(`MissionPlanner_dissected/backend`, run with `--vehicle ...`), which talks
+MAVLink to each vehicle. For every vehicle message it receives (2 Hz per
+vehicle, sent only while that vehicle's link is live) it publishes one RxReport
+heartbeat. It never publishes old data as current: a message is used once,
+only if it is younger than `LINK_A_STALE_S` (1 s), and only while MQTT is
+connected. When a vehicle's data stops, its heartbeats stop and the console
+says so (`[VEHICLE] USV1 telemetry STALE ... heartbeats to RoboCommand
+STOPPED`). The 5-second status line ends with `vehicles: USV1=LIVE UAV1=...`.
+
+A value the backend does not know is left unset in the heartbeat, never filled
+in, and the console names it once (`heartbeat published WITHOUT ...`): position
+without a 3D GPS fix; the UAV's `altitude_hae_m` without the GPS ellipsoid
+height (MAVLink 2 only); the UAV flight phase while unknown. The robot state
+comes from armed + flight mode with the same rules as the operator display
+(provisional; KILLED needs the e-stop signal). `current_task` is TASK_NONE.
+
+Tests (standard library only): `python3 -m unittest discover -s tests`.
+
+## Task 4 responses
+
+Same in real and local test mode (`task4.py`), following the handbook's chains:
+
+| RoboCommand sends | The OCS answers |
+|---|---|
+| AssistanceRequest | IncidentAck at once (automatic), then a ReadinessReport when the operator clicks **Report ready** on the display |
+| KeepOutZone | IncidentAck at once |
+| AllClear | IncidentAck at once |
+| MovingObjectAlert | nothing (no acknowledgment in the handbook) |
+| ReadinessConfirm | nothing: it clears the vehicle to resume normal tasking |
+
+Each reply is attributed to our vehicle of the command's domain (USV1 for
+surface, UAV1 for air) and references the command's `seq`. A command for a
+domain we have no vehicle for (UUV) is not acknowledged, and the console says
+so. The ReadinessReport is never automatic in real mode: the operator decides
+the vehicle is at the point and loitering; the confirmation dialog shows its
+distance to the point and its mode. In local test mode it is sent 3 s after
+the IncidentAck (unless `ROBOTX_AUTO_TASK4_RESPONSES=0`). This replaces
+`simulation/task4_responses.py`, which is no longer called: it acked
+MovingObjectAlert and answered ReadinessConfirm with a ReadinessReport.
+
+## Operator display feed (link C)
+
+The OCS serves a read-only Server-Sent Events feed at
+`http://127.0.0.1:5081/linkc` for the operator display (`link_c.py`): the
+RoboCommand connection, run, preflight checklist, commands, course, UAV
+geofence, Task 4 items and their replies, and the vehicle heartbeat state,
+every second and on change, plus the `[COMMAND]`, `[ERROR]` and `[VEHICLE]`
+console lines. It never blocks the OCS: a slow or closed display is dropped
+and reconnects by itself. It is read-only except one action, `POST
+/task4/ready` (the operator's ReadinessReport). Only the display's own pages
+may use it (`LINK_C_ALLOWED_ORIGINS` in `config.py`).
+
+## Network setup
+
+By default the OCS discovers the DHCP-provided IPv4 default gateway and uses it
+as the RoboCommand broker address. In the two-laptop setup, configure DHCP so
+the RoboCommand laptop is the OCS laptop's default gateway. DHCP must provide
+the OCS laptop with an address and route; the OCS does not configure DHCP. With
+no gateway, the OCS keeps waiting and retrying (only local test mode falls back
+to `localhost`).
+
+### Network check
+
+Before each connection attempt the OCS prints and logs its interface, IP,
+gateway and broker, and checks that:
+
+- the local IP is not link-local (169.254.x.x, meaning no DHCP lease);
+- the local IP is inside `--subnet`;
+- the default gateway and the broker equal `--robocommand-ip`.
+
+In real mode a failed check blocks the connection and is retried every 2
+seconds (`ROBOTX_NETWORK_STRICT=0` only warns). If the subnet or RoboCommand IP
+is not given, those two checks are skipped with a warning. Loopback brokers skip
+the course checks. **Manual checks:** the interface is set to DHCP, network
+bridging is off, and Internet sharing is off.
+
+## Source files
+
+- `main.py` — MQTT connection, receive processing, run declaration, heartbeats,
+  command handling, and operator output.
+- `config.py` — team and vehicle IDs, task tiers, broker and network-check
+  settings, topics, and local test settings.
+- `sequence_manager.py` — request and per-vehicle report sequence counters.
+- `task_reports.py` — task report message builders and MQTT publishing.
+- `startup_checks.py` — protobuf schema hash and vehicle ID checks.
+- `logger.py` — best-effort session logging.
+- `vehicle_link.py` — link A client (vehicle backend WebSocket) and heartbeat
+  fields from real telemetry.
+- `link_c.py` — link C, the status feed for the operator display, and the
+  Task 4 state it shows.
+- `task4.py` — Task 4 replies: automatic IncidentAcks, the operator's
+  ReadinessReport.
+- `tests/` — unit tests for `vehicle_link.py`, `link_c.py` and `task4.py`.
+- `../Robocmd_Application/gen/python/` — generated protobuf classes used by the
+  OCS; the application adds this directory to its Python import path.

@@ -1,0 +1,657 @@
+2026-10-11 20:10:25,369 INFO AQUAHOLICS OCS log started | path=/home/alwin/AQUAHOLICS-Communication/OCS_Application/logs/aquaholics_ocs_20261011_201025.log
+2026-10-11 20:10:25,370 INFO ====================================================
+2026-10-11 20:10:25,370 INFO AQUAHOLICS ROBOTX OCS
+2026-10-11 20:10:25,370 INFO ====================================================
+2026-10-11 20:10:25,371 INFO OCS STARTED
+2026-10-11 20:10:25,371 INFO [01] OCS started in REAL NETWORK mode
+2026-10-11 20:10:25,371 INFO      Vehicle telemetry from the vehicle backend: ws://127.0.0.1:5080/linka
+2026-10-11 20:10:25,382 INFO [SCHEMA] protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-11 20:10:25,384 INFO Schema | protobuf schema: 7 files, sha256=d3252516e0e760662807a886fff386a49301ed9ef4f4d3ead2f7ce0cf3584fc9
+2026-10-11 20:10:25,385 INFO [SCHEMA] protobuf runtime: 7.35.0
+2026-10-11 20:10:25,385 INFO Schema | protobuf runtime: 7.35.0
+2026-10-11 20:10:25,388 INFO [VEHICLES] IDs OK: USV1, UAV1 (used in RunDeclaration and report topics, e.g. robocommand/robotx/RMKE/USV1/report)
+2026-10-11 20:10:25,389 INFO [VEHICLE LINK] connected to the vehicle backend at ws://127.0.0.1:5080/linka
+2026-10-11 20:10:25,390 WARNING [VEHICLE] USV1 link OFF
+2026-10-11 20:10:25,389 INFO Preflight | schema=PASS sha256 d3252516e0e7
+2026-10-11 20:10:25,390 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:25,391 INFO Preflight | vehicles=PASS USV1, UAV1
+2026-10-11 20:10:25,391 INFO Preflight | sequences=PASS independent counter per vehicle verified
+2026-10-11 20:10:25,391 INFO Preflight | team=CONFIRM RMKE (default from config.py)
+2026-10-11 20:10:25,391 INFO Preflight | tiers=CONFIRM core/disruptive/disruptive/disruptive
+2026-10-11 20:10:25,391 INFO Preflight | visibility=PASS status line every 5 s
+2026-10-11 20:10:25,392 INFO Preflight | logging=PASS /home/alwin/AQUAHOLICS-Communication/OCS_Application/logs
+2026-10-11 20:10:25,392 INFO Preflight | dhcp=MANUAL operator must verify
+2026-10-11 20:10:25,392 INFO Preflight | bridge=MANUAL operator must verify
+2026-10-11 20:10:25,393 INFO      Operator display feed (link C): http://127.0.0.1:5081/linkc
+2026-10-11 20:10:25,394 INFO      team_id = RMKE
+2026-10-11 20:10:25,394 INFO      vehicles = USV1, UAV1
+2026-10-11 20:10:25,394 INFO      task1 = CORE
+2026-10-11 20:10:25,394 INFO      task2 = DISRUPTIVE
+2026-10-11 20:10:25,394 INFO      task3 = DISRUPTIVE
+2026-10-11 20:10:25,394 INFO      task4 = DISRUPTIVE
+2026-10-11 20:10:25,395 INFO      >>> Operator: confirm team_id and task tiers above before the run <<<
+2026-10-11 20:10:25,395 INFO Startup config | team=RMKE vehicles=['USV1', 'UAV1'] tiers=core/disruptive/disruptive/disruptive local_test=False
+2026-10-11 20:10:25,395 INFO 
+2026-10-11 20:10:25,395 INFO [MQTT STATUS] Waiting for network | checking route to broker=127.0.0.1
+2026-10-11 20:10:25,408 INFO Preflight | subnet=SKIP loopback broker
+2026-10-11 20:10:25,408 INFO Preflight | gateway=SKIP loopback broker
+2026-10-11 20:10:25,409 INFO [NETWORK] interface=lo ip=127.0.0.1 gateway=192.168.1.1 broker=127.0.0.1
+2026-10-11 20:10:25,409 INFO Network | interface=lo ip=127.0.0.1 gateway=192.168.1.1 broker=127.0.0.1 subnet=None robocommand_ip=None
+2026-10-11 20:10:25,409 INFO [NETWORK] loopback broker: course network checks skipped
+2026-10-11 20:10:25,409 INFO [MQTT STATUS] Connecting | broker=127.0.0.1:1883
+2026-10-11 20:10:25,409 INFO Connecting to MQTT broker 127.0.0.1:1883...
+2026-10-11 20:10:25,412 INFO [MQTT STATUS] Connected | broker=127.0.0.1:1883
+2026-10-11 20:10:25,413 INFO Preflight | mqtt=PASS 127.0.0.1:1883
+2026-10-11 20:10:25,413 INFO MQTT connected | broker=127.0.0.1:1883 connection=1
+2026-10-11 20:10:25,413 INFO [02] MQTT connection established
+2026-10-11 20:10:25,413 INFO Preflight | sub_course=PASS robocommand/robotx/course
+2026-10-11 20:10:25,414 INFO Preflight | sub_command=PASS robocommand/robotx/RMKE/command
+2026-10-11 20:10:25,414 INFO [03] Subscribed:
+2026-10-11 20:10:25,414 INFO      robocommand/robotx/course
+2026-10-11 20:10:25,414 INFO [04] Subscribed:
+2026-10-11 20:10:25,414 INFO      robocommand/robotx/RMKE/command
+2026-10-11 20:10:25,415 INFO MQTT subscriptions | course_topic=robocommand/robotx/course rc=0 | command_topic=robocommand/robotx/RMKE/command rc=0
+2026-10-11 20:10:25,417 INFO MQTT RX | topic=robocommand/robotx/course | bytes=130 | retained=True
+2026-10-11 20:10:25,417 INFO [05] RxCourse received
+2026-10-11 20:10:25,418 INFO [06] RxCourse decoded
+2026-10-11 20:10:25,418 INFO Preflight | rx_course=PASS course 'ALPHA_TEST'
+2026-10-11 20:10:25,419 WARNING [COURSE] WARNING: expected course ID not configured (--course-id); comparison skipped
+2026-10-11 20:10:25,419 INFO Course validated | course_id=ALPHA_TEST corners=5 pinger_hz=25000
+2026-10-11 20:10:25,419 INFO [07] Course configuration validated
+2026-10-11 20:10:25,419 INFO Preflight | course_check=SKIP boundary ok; course ID not compared (no --course-id)
+2026-10-11 20:10:25,420 INFO 
+2026-10-11 20:10:25,420 INFO ====================================================
+2026-10-11 20:10:25,420 INFO COURSE INFORMATION
+2026-10-11 20:10:25,420 INFO ====================================================
+2026-10-11 20:10:25,420 INFO Course ID       : ALPHA_TEST
+2026-10-11 20:10:25,420 INFO Pinger Frequency: 25000 Hz
+2026-10-11 20:10:25,421 INFO Course Corners  : 5
+2026-10-11 20:10:25,421 INFO ====================================================
+2026-10-11 20:10:25,421 ERROR [ERROR] RunDeclaration BLOCKED: cannot read UAV geofence file 'uav_geofence.json': [Errno 2] No such file or directory: 'uav_geofence.json'
+2026-10-11 20:10:25,421 ERROR RunDeclaration blocked | cannot read UAV geofence file 'uav_geofence.json': [Errno 2] No such file or directory: 'uav_geofence.json'
+2026-10-11 20:10:25,421 INFO Preflight | geofence=FAIL cannot read UAV geofence file 'uav_geofence.json': [Errno 2] No such f
+2026-10-11 20:10:25,422 INFO ==================================================================
+2026-10-11 20:10:25,422 INFO PREFLIGHT CHECKLIST (RunDeclaration blocked)
+2026-10-11 20:10:25,422 INFO ==================================================================
+2026-10-11 20:10:25,422 INFO  1. [MANUAL ] RoboCommand-facing interface set to DHCP - operator must verify
+2026-10-11 20:10:25,423 INFO  2. [MANUAL ] Bridging / Internet sharing disabled - operator must verify
+2026-10-11 20:10:25,423 INFO  3. [SKIP   ] OCS address in assigned course subnet - loopback broker
+2026-10-11 20:10:25,423 INFO  4. [SKIP   ] Default gateway = RoboCommand address - loopback broker
+2026-10-11 20:10:25,423 INFO  5. [PASS   ] MQTT client connected - 127.0.0.1:1883
+2026-10-11 20:10:25,423 INFO  6. [PASS   ] Subscribed to course topic - robocommand/robotx/course
+2026-10-11 20:10:25,424 INFO  7. [PASS   ] Subscribed to team command topic - robocommand/robotx/RMKE/command
+2026-10-11 20:10:25,424 INFO  8. [PASS   ] Retained RxCourse received and decoded - course 'ALPHA_TEST'
+2026-10-11 20:10:25,424 INFO  9. [SKIP   ] Course ID and boundary checked - boundary ok; course ID not compared (no --course-id)
+2026-10-11 20:10:25,424 INFO 10. [PASS   ] Approved protobuf schema release - sha256 d3252516e0e7
+2026-10-11 20:10:25,424 INFO 11. [CONFIRM] Assigned team_id configured - RMKE (default from config.py)
+2026-10-11 20:10:25,424 INFO 12. [PASS   ] Vehicle IDs unique and consistent - USV1, UAV1
+2026-10-11 20:10:25,425 INFO 13. [PASS   ] Independent per-vehicle report sequences - independent counter per vehicle verified
+2026-10-11 20:10:25,425 ERROR 14. [FAIL   ] UAV geofence closed, inside course boundary - cannot read UAV geofence file 'uav_geofence.json': [Errno 2]
+2026-10-11 20:10:25,425 INFO 15. [CONFIRM] Task tiers in RunDeclaration - core/disruptive/disruptive/disruptive
+2026-10-11 20:10:25,425 INFO 16. [PASS   ] Operator sees connection / command status - status line every 5 s
+2026-10-11 20:10:25,425 INFO 17. [PASS   ] Logging enabled for the run - /home/alwin/AQUAHOLICS-Communication/OCS_Application/logs
+2026-10-11 20:10:25,425 INFO ------------------------------------------------------------------
+2026-10-11 20:10:25,426 INFO 9/17 verified | overall: FAIL
+2026-10-11 20:10:25,426 INFO ==================================================================
+2026-10-11 20:10:26,412 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:10:29,163 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:30,165 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:31,413 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:10:35,188 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:36,191 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:36,415 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:10:41,216 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:41,416 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:10:42,219 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:46,417 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:10:47,236 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:48,238 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:51,418 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:10:53,253 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:54,255 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:10:56,419 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:10:59,275 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:00,277 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:01,425 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:05,304 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:06,305 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:06,428 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:11,323 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:11,429 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:11:12,326 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:16,430 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:17,330 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:18,330 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:21,435 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:23,358 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:24,359 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:26,438 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:29,383 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:30,385 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:31,440 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:35,415 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:36,417 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:36,447 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:41,449 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:41,467 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:42,466 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:46,451 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:47,491 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:48,491 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:51,452 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:53,507 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:54,515 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:11:56,455 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:11:59,531 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:00,534 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:01,456 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:05,551 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:06,458 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:12:06,550 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:11,460 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:11,573 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:12,574 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:16,462 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:17,593 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:18,593 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:21,463 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:23,605 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:24,612 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:26,464 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:29,628 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:30,630 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:31,465 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:35,643 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:36,466 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:12:36,646 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:41,467 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:41,662 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:42,662 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:46,468 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:47,677 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:48,678 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:51,469 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:53,701 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:54,703 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:12:56,470 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:12:59,717 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:00,718 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:01,471 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:05,732 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:06,472 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:13:06,733 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:11,473 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:11,746 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:12,748 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:16,475 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:17,763 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:18,765 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:21,476 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:23,783 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:24,784 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:26,477 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:29,799 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:30,801 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:31,478 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:35,815 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:36,479 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:13:36,816 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:41,480 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:41,830 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:42,831 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:46,481 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:47,846 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:48,848 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:51,482 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:53,863 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:54,864 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:13:56,483 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:13:59,877 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:00,879 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:01,484 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:05,893 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:06,485 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:14:06,895 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:11,487 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:11,909 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:12,911 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:16,488 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:17,926 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:18,929 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:21,489 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:23,945 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:24,945 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:26,490 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:29,962 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:30,963 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:31,491 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:35,979 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:36,492 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:14:36,982 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:41,493 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:41,995 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:42,996 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:46,494 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:48,011 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:49,012 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:51,495 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:14:54,029 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:55,031 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:14:56,496 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:00,044 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:01,045 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:01,497 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:06,062 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:06,498 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:15:07,063 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:11,499 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:12,077 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:13,079 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:16,500 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:18,093 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:19,100 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:21,501 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:24,108 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:25,111 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:26,502 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:30,123 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:31,125 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:31,503 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:36,139 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:36,504 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:15:37,140 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:41,506 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:42,156 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:43,158 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:46,507 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:48,172 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:49,173 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:51,508 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:15:54,185 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:55,186 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:15:56,509 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:00,200 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:01,201 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:01,510 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:06,216 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:06,511 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:16:07,218 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:11,512 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:12,232 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:13,235 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:16,513 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:18,247 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:19,250 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:21,514 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:24,264 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:25,265 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:26,517 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:30,283 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:31,285 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:31,519 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:36,299 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:36,520 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:16:37,300 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:41,521 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:42,314 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:43,316 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:46,522 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:48,329 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:49,330 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:51,523 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:16:54,343 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:55,346 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:16:56,524 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:00,360 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:01,361 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:01,525 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:06,377 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:06,526 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:17:07,379 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:11,527 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:12,392 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:13,394 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:16,528 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:18,411 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:19,413 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:21,529 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:24,427 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:25,429 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:26,530 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:30,442 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:31,444 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:31,531 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:36,457 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:36,532 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:17:37,458 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:41,533 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:42,472 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:43,474 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:46,534 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:48,487 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:49,488 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:51,537 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:17:54,502 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:55,503 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:17:56,538 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:00,517 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:01,518 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:01,539 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:06,533 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:06,540 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:18:07,537 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:11,545 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:12,551 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:13,552 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:16,546 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:18,567 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:19,568 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:21,547 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:24,581 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:25,583 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:26,548 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:30,596 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:31,549 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:18:31,597 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:36,552 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:36,618 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:37,621 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:41,553 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:42,635 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:43,638 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:46,554 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:48,650 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:49,654 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:51,555 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:18:54,667 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:55,669 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:18:56,556 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:00,685 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:01,557 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:19:01,686 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:06,559 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:06,703 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:07,704 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:11,562 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:12,731 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:13,733 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:16,563 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:18,746 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:19,750 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:21,564 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:24,765 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:25,766 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:26,565 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:30,779 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:31,566 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:19:31,781 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:36,567 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:36,795 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:37,796 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:41,568 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:42,811 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:43,811 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:46,571 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:48,832 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:49,834 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:51,572 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:19:54,850 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:55,853 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:19:56,573 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:00,869 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:01,574 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:20:01,871 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:06,575 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:06,884 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:07,885 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:11,577 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:12,900 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:13,900 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:16,579 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:18,917 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:19,920 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:21,580 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:24,933 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:25,935 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:26,581 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:30,950 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:31,582 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:20:31,952 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:36,584 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:36,969 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:37,971 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:41,587 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:42,990 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:43,991 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:46,588 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:49,005 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:50,013 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:51,589 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:20:55,029 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:56,032 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:20:56,591 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:01,047 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:01,592 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:21:02,050 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:06,593 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:07,066 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:08,067 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:11,594 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:13,080 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:14,081 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:16,595 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:19,097 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:20,102 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:21,596 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:25,118 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:26,120 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:26,601 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:31,136 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:31,602 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:21:32,138 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:36,603 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:37,155 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:38,155 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:41,604 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:43,174 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:44,177 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:46,605 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:49,195 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:50,200 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:51,606 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:21:55,217 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:56,219 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:21:56,609 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:01,242 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:01,612 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:22:02,242 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:06,615 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:07,258 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:08,259 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:11,616 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:13,273 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:14,275 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:16,618 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:19,290 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:20,292 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:21,619 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:25,307 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:26,308 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:26,621 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:31,323 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:31,624 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:22:32,324 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:36,626 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:37,342 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:38,343 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:41,627 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:43,356 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:44,357 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:46,629 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:49,369 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:50,371 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:51,631 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:22:55,385 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:56,389 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:22:56,633 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:01,405 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:01,635 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:23:02,406 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:06,636 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:07,419 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:08,427 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:11,637 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:13,442 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:14,444 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:16,638 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:19,459 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:20,465 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:21,639 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:25,480 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:26,481 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:26,640 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:31,498 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:31,641 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:23:32,499 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:36,641 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:37,515 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:38,519 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:41,643 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:43,537 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:44,541 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:46,644 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:49,557 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:50,559 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:51,646 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:23:55,574 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:56,575 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:23:56,648 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:01,591 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:01,650 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:24:02,592 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:06,651 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:07,611 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:08,614 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:11,652 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:13,634 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:14,635 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:16,654 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:19,654 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:20,655 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:21,656 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:25,678 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:26,657 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:24:26,683 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:31,658 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:31,704 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:32,707 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:36,659 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:37,721 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:38,721 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:41,660 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:43,744 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:44,745 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:46,661 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:49,766 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:50,775 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:51,662 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:24:55,791 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:24:56,664 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:24:56,793 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:01,665 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:01,810 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:02,811 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:06,666 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:07,830 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:08,831 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:11,668 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:13,853 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:14,855 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:16,669 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:19,877 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:20,886 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:21,670 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:25,907 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:26,671 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:25:26,909 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:31,673 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:31,934 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:32,934 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:36,674 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:37,957 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:38,960 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:41,675 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:43,976 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:44,979 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:46,676 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:49,998 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:51,006 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:51,678 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:25:56,028 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:25:56,680 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:25:57,031 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:01,681 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:02,042 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:03,044 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:06,682 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:08,058 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:09,059 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:11,684 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:14,074 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:15,075 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:16,686 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:20,097 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:21,099 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:21,687 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:26,112 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:26,688 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:26:27,113 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:31,689 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:32,128 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:33,132 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:36,690 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:38,147 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:39,150 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:41,691 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:44,168 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:45,171 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:46,692 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:50,183 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:51,190 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:51,693 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:26:56,205 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:26:56,695 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:26:57,208 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:01,698 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:02,236 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:03,239 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:06,699 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:08,254 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:09,255 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:11,700 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:14,269 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:15,271 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:16,704 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:20,293 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:21,299 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:21,708 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:26,321 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:26,709 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:27:27,323 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:31,710 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:32,336 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:33,337 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:36,711 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:38,353 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:39,354 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:41,713 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:44,370 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:45,373 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:46,714 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:50,391 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:51,393 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:51,715 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED
+2026-10-11 20:27:56,420 WARNING [VEHICLE] UAV1 link CONNECTING: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:27:56,717 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CONNECTING
+2026-10-11 20:27:57,421 WARNING [VEHICLE] UAV1 link CLOSED: no vehicle on /dev/serial/by-id/usb-Silicon_Labs_CP2102_USB_to_UART_Bridge_Controller_0015-if00-port0: port did not open, or no heartbeat within 30 s
+2026-10-11 20:28:01,718 INFO [MQTT CURRENT STATE] Connected | run=not-started | command: none (ok=0 rejected=0 ignored=0) | preflight 9/17 FAIL | dropped_messages=0 | stale_messages=0 | vehicles: USV1=OFF UAV1=CLOSED

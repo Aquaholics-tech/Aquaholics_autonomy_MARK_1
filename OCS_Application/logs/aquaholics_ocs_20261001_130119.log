@@ -1,0 +1,1233 @@
+2026-10-01 13:01:19,609 INFO AQUAHOLICS OCS log started | path=/home/alwin/AQUAHOLICS-Communication/OCS_Application/logs/aquaholics_ocs_20261001_130119.log
+2026-10-01 13:01:19,622 INFO ====================================================
+2026-10-01 13:01:19,622 INFO AQUAHOLICS ROBOTX OCS
+2026-10-01 13:01:19,623 INFO ====================================================
+2026-10-01 13:01:19,623 INFO OCS STARTED
+2026-10-01 13:01:19,623 INFO [01] Local test mode enabled (broker auto-discovery active unless ROBOTX_BROKER is set)
+2026-10-01 13:01:19,623 INFO 
+2026-10-01 13:01:19,624 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:19,630 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:19,631 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:19,632 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:19,632 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:21,633 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:21,634 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:21,634 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:21,635 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:21,635 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:23,635 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:23,636 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:23,636 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:23,637 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:23,637 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:25,637 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:25,638 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:25,638 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:25,639 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:25,639 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:27,640 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:27,640 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:27,640 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:27,642 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:27,642 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:29,644 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:29,645 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:29,645 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:29,646 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:29,648 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:31,648 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:31,650 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:31,650 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:31,651 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:31,652 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:33,652 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:33,653 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:33,653 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:33,654 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:33,654 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:35,655 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:35,655 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:35,656 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:35,657 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:35,657 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:37,658 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:37,658 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:37,659 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:37,661 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:37,661 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:39,663 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:39,663 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:39,663 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:39,664 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:39,665 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:41,665 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:41,666 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:41,666 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:41,667 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:41,667 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:43,668 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:43,669 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:43,669 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:43,670 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:43,670 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:45,671 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:45,671 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:45,672 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:45,673 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:45,673 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:47,674 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:47,674 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:47,674 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:47,676 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:47,676 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:49,676 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:49,677 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:49,677 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:49,678 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:49,679 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:51,679 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:51,681 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:51,682 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:51,686 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:51,686 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:53,687 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:53,688 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:53,688 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:53,690 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:53,690 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:55,691 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:55,691 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:55,691 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:55,692 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:55,693 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:57,693 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:57,695 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:57,696 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:57,697 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:57,698 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:01:59,699 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:01:59,699 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:01:59,701 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:01:59,703 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:01:59,703 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:01,703 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:01,704 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:01,704 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:01,705 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:01,706 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:03,706 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:03,707 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:03,707 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:03,708 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:03,708 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:05,709 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:05,709 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:05,710 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:05,711 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:05,711 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:07,712 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:07,713 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:07,713 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:07,715 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:07,716 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:09,717 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:09,719 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:09,720 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:09,722 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:09,722 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:11,723 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:11,726 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:11,727 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:11,733 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:11,733 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:13,734 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:13,735 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:13,735 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:13,736 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:13,737 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:15,737 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:15,738 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:15,738 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:15,739 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:15,739 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:17,740 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:17,740 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:17,740 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:17,741 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:17,741 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:19,742 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:19,742 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:19,743 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:19,744 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:19,744 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:21,744 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:21,747 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:21,748 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:21,752 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:21,752 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:23,752 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:23,753 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:23,753 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:23,754 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:23,754 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:25,754 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:25,755 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:25,755 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:25,756 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:25,756 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:27,757 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:27,759 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:27,761 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:27,762 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:27,762 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:29,763 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:29,764 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:29,764 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:29,765 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:29,766 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:31,766 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:31,767 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:31,767 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:31,768 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:31,768 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:33,771 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:33,772 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:33,772 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:33,777 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:33,777 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:35,777 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:35,779 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:35,779 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:35,780 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:35,781 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:37,781 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:37,782 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:37,782 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:37,783 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:37,783 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:39,785 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:39,786 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:39,787 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:39,790 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:39,791 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:41,792 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:41,794 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:41,794 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:41,796 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:41,796 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:43,797 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:43,798 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:43,798 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:43,799 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:43,799 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:45,800 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:45,800 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:45,801 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:45,802 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:45,802 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:47,802 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:47,803 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:47,803 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:47,804 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:47,804 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:49,805 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:49,805 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:49,806 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:49,807 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:49,807 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:51,808 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:51,808 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:51,808 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:51,810 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:51,810 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:53,810 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:53,811 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:53,811 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:53,812 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:53,812 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:55,813 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:55,813 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:55,813 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:55,815 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:55,815 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:57,815 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:57,816 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:57,816 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:57,818 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:57,818 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:02:59,819 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:02:59,821 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:02:59,823 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:02:59,830 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:02:59,830 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:01,830 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:01,831 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:01,831 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:01,832 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:01,833 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:03,833 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:03,834 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:03,834 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:03,835 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:03,836 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:05,836 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:05,837 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:05,837 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:05,838 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:05,838 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:07,839 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:07,839 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:07,839 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:07,841 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:07,841 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:09,841 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:09,843 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:09,844 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:09,845 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:09,846 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:11,846 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:11,847 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:11,847 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:11,848 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:11,848 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:13,848 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:13,849 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:13,849 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:13,851 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:13,851 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:15,851 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:15,852 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:15,852 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:15,853 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:15,854 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:17,855 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:17,855 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:17,855 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:17,857 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:17,858 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:19,859 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:19,859 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:19,859 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:19,860 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:19,861 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:21,861 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:21,861 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:21,862 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:21,863 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:21,863 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:23,863 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:23,864 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:23,864 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:23,865 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:23,866 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:25,867 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:25,868 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:25,868 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:25,869 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:25,869 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:27,870 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:27,871 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:27,871 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:27,872 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:27,872 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:29,873 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:29,873 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:29,874 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:29,875 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:29,875 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:31,875 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:31,876 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:31,876 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:31,877 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:31,878 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:33,878 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:33,879 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:33,879 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:33,880 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:33,880 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:35,881 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:35,881 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:35,882 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:35,883 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:35,883 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:37,883 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:37,884 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:37,884 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:37,885 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:37,886 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:39,886 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:39,887 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:39,887 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:39,889 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:39,889 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:41,889 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:41,890 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:41,890 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:41,892 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:41,892 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:43,892 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:43,894 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:43,894 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:43,896 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:43,896 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:45,897 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:45,897 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:45,898 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:45,899 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:45,899 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:47,899 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:47,900 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:47,900 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:47,901 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:47,901 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:49,902 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:49,902 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:49,903 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:49,905 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:49,905 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:51,905 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:51,906 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:51,906 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:51,908 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:51,908 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:53,909 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:53,911 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:53,912 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:53,915 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:53,916 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:55,917 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:55,918 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:55,918 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:55,919 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:55,919 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:57,920 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:57,920 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:57,921 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:57,922 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:57,922 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:03:59,923 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:03:59,923 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:03:59,924 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:03:59,925 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:03:59,925 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:04:01,926 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:04:01,926 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:04:01,927 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:04:01,928 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:04:01,928 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:04:03,929 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:04:03,930 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:04:03,931 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:04:03,932 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:04:03,933 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:04:05,933 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:04:05,934 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:04:05,934 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:04:05,935 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:04:05,935 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:04:07,936 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:04:07,936 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:04:07,936 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:04:07,937 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:04:07,938 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:04:09,938 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:04:09,939 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:04:09,939 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:04:09,941 WARNING [MQTT] Connection failed: [Errno 111] Connection refused
+2026-10-01 13:04:09,942 WARNING [MQTT] Retrying in 2 seconds...
+2026-10-01 13:04:11,942 INFO [MQTT STATUS] Waiting for network | checking route to broker=localhost
+2026-10-01 13:04:11,943 INFO [MQTT STATUS] Connecting | broker=localhost:1883
+2026-10-01 13:04:11,943 INFO Connecting to MQTT broker localhost:1883...
+2026-10-01 13:04:11,953 INFO [MQTT STATUS] Connected | broker=localhost:1883
+2026-10-01 13:04:11,953 INFO MQTT connected | broker=localhost:1883 connection=1
+2026-10-01 13:04:11,954 INFO [02] MQTT connection established
+2026-10-01 13:04:11,955 INFO [03] Subscribed:
+2026-10-01 13:04:11,955 INFO      robocommand/robotx/course
+2026-10-01 13:04:11,956 INFO [04] Subscribed:
+2026-10-01 13:04:11,956 INFO      robocommand/robotx/RMKE/command
+2026-10-01 13:04:11,956 INFO MQTT subscriptions | course_topic=robocommand/robotx/course rc=0 | command_topic=robocommand/robotx/RMKE/command rc=0
+2026-10-01 13:04:12,947 INFO [MQTT CURRENT STATE] Connected | run=not-started | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:17,948 INFO [MQTT CURRENT STATE] Connected | run=not-started | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:22,949 INFO [MQTT CURRENT STATE] Connected | run=not-started | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:23,656 INFO MQTT RX | topic=robocommand/robotx/course | bytes=130 | retained=False
+2026-10-01 13:04:23,657 INFO [05] RxCourse received
+2026-10-01 13:04:23,657 INFO [06] RxCourse decoded
+2026-10-01 13:04:23,657 INFO [07] Course configuration validated
+2026-10-01 13:04:23,658 INFO 
+2026-10-01 13:04:23,658 INFO ====================================================
+2026-10-01 13:04:23,658 INFO COURSE INFORMATION
+2026-10-01 13:04:23,658 INFO ====================================================
+2026-10-01 13:04:23,658 INFO Course ID       : ALPHA_TEST
+2026-10-01 13:04:23,659 INFO Pinger Frequency: 25000 Hz
+2026-10-01 13:04:23,659 INFO Course Corners  : 5
+2026-10-01 13:04:23,659 INFO ====================================================
+2026-10-01 13:04:23,661 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/request | team=RMKE | request_seq=1 | run=None | rc=0
+2026-10-01 13:04:23,661 INFO 
+2026-10-01 13:04:23,662 INFO [08] RunDeclaration publish queued
+2026-10-01 13:04:23,662 INFO      team_id = RMKE
+2026-10-01 13:04:23,663 INFO      USV1
+2026-10-01 13:04:23,663 INFO      UAV1
+2026-10-01 13:04:23,664 INFO      declaration_seq = 1
+2026-10-01 13:04:23,664 INFO      task1 = CORE
+2026-10-01 13:04:23,665 INFO      task2 = DISRUPTIVE
+2026-10-01 13:04:23,666 INFO      task3 = DISRUPTIVE
+2026-10-01 13:04:23,667 INFO      task4 = DISRUPTIVE
+2026-10-01 13:04:23,667 INFO      Topic: robocommand/robotx/RMKE/request
+2026-10-01 13:04:23,670 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=None | seq=1 | rc=0
+2026-10-01 13:04:23,670 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=1 rc=0
+2026-10-01 13:04:23,671 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=None | seq=1 | rc=0
+2026-10-01 13:04:23,671 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=1 rc=0
+2026-10-01 13:04:23,672 INFO 
+2026-10-01 13:04:23,672 INFO [09] USV1 heartbeat published
+2026-10-01 13:04:23,673 INFO      seq = 1
+2026-10-01 13:04:23,673 INFO [10] UAV1 heartbeat published
+2026-10-01 13:04:23,673 INFO      seq = 1
+2026-10-01 13:04:23,673 INFO [11] USV1 = STATE_AUTO
+2026-10-01 13:04:23,673 INFO [12] UAV1 = STATE_AUTO
+2026-10-01 13:04:23,743 INFO MQTT RX | topic=robocommand/robotx/RMKE/command | bytes=28 | retained=False
+2026-10-01 13:04:23,744 INFO COMMAND received | topic=robocommand/robotx/RMKE/command | team=RMKE | run=None | seq=1 | type=run_start
+2026-10-01 13:04:23,745 INFO [COMMAND] received seq=1 type=run_start run=not-started
+2026-10-01 13:04:23,745 INFO 
+2026-10-01 13:04:23,745 INFO [13] RunStart received
+2026-10-01 13:04:23,745 INFO      command_seq = 1
+2026-10-01 13:04:23,746 INFO [14] declaration_seq verified
+2026-10-01 13:04:23,746 INFO [COMMAND] accepted RunStart seq=1
+2026-10-01 13:04:23,747 INFO [15] run_id recorded
+2026-10-01 13:04:23,748 INFO      run_id = 1
+2026-10-01 13:04:23,748 INFO 
+2026-10-01 13:04:23,749 INFO ====================================================
+2026-10-01 13:04:23,749 INFO RUN START COMPLETE
+2026-10-01 13:04:23,749 INFO ====================================================
+2026-10-01 13:04:24,174 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=2 | rc=0
+2026-10-01 13:04:24,175 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=2 rc=0
+2026-10-01 13:04:24,176 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=2 | rc=0
+2026-10-01 13:04:24,176 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=2 rc=0
+2026-10-01 13:04:24,677 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=3 | rc=0
+2026-10-01 13:04:24,677 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=3 rc=0
+2026-10-01 13:04:24,678 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=3 | rc=0
+2026-10-01 13:04:24,679 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=3 rc=0
+2026-10-01 13:04:24,750 INFO 
+2026-10-01 13:04:24,751 INFO ====================================================
+2026-10-01 13:04:24,751 INFO LOCAL TASK REPORT TEST
+2026-10-01 13:04:24,751 INFO ====================================================
+2026-10-01 13:04:24,752 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | seq=4 | rc=0
+2026-10-01 13:04:24,752 INFO [16] PipelineSurveyReport publish queued
+2026-10-01 13:04:24,752 INFO      vehicle_id = USV1
+2026-10-01 13:04:24,753 INFO      report_seq = 4
+2026-10-01 13:04:25,180 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=5 | rc=0
+2026-10-01 13:04:25,181 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=5 rc=0
+2026-10-01 13:04:25,181 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=4 | rc=0
+2026-10-01 13:04:25,183 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=4 rc=0
+2026-10-01 13:04:25,503 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | seq=6 | rc=0
+2026-10-01 13:04:25,504 INFO 
+2026-10-01 13:04:25,504 INFO [17] ResourceDeliveryRequest publish queued
+2026-10-01 13:04:25,504 INFO      vehicle_id = USV1
+2026-10-01 13:04:25,504 INFO      report_seq = 6
+2026-10-01 13:04:25,684 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=7 | rc=0
+2026-10-01 13:04:25,684 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=7 rc=0
+2026-10-01 13:04:25,686 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=5 | rc=0
+2026-10-01 13:04:25,686 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=5 rc=0
+2026-10-01 13:04:26,187 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=8 | rc=0
+2026-10-01 13:04:26,188 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=8 rc=0
+2026-10-01 13:04:26,189 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=6 | rc=0
+2026-10-01 13:04:26,190 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=6 rc=0
+2026-10-01 13:04:26,255 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | seq=9 | rc=0
+2026-10-01 13:04:26,256 INFO 
+2026-10-01 13:04:26,256 INFO [18] DockingReport publish queued
+2026-10-01 13:04:26,257 INFO      vehicle_id = USV1
+2026-10-01 13:04:26,257 INFO      bay_id = 1
+2026-10-01 13:04:26,257 INFO      report_seq = 9
+2026-10-01 13:04:26,691 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=10 | rc=0
+2026-10-01 13:04:26,696 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=10 rc=0
+2026-10-01 13:04:26,699 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=7 | rc=0
+2026-10-01 13:04:26,704 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=7 rc=0
+2026-10-01 13:04:27,008 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | seq=8 | rc=0
+2026-10-01 13:04:27,009 INFO 
+2026-10-01 13:04:27,009 INFO [19] FirefightingReport publish queued
+2026-10-01 13:04:27,010 INFO      vehicle_id = UAV1
+2026-10-01 13:04:27,011 INFO      window_id = 1
+2026-10-01 13:04:27,011 INFO      report_seq = 8
+2026-10-01 13:04:27,011 INFO 
+2026-10-01 13:04:27,011 INFO DATA = LOCAL SIMULATION
+2026-10-01 13:04:27,012 INFO ====================================================
+2026-10-01 13:04:27,012 INFO LOCAL TASK REPORT TEST COMPLETE
+2026-10-01 13:04:27,012 INFO ====================================================
+2026-10-01 13:04:27,207 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=11 | rc=0
+2026-10-01 13:04:27,208 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=11 rc=0
+2026-10-01 13:04:27,209 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=9 | rc=0
+2026-10-01 13:04:27,210 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=9 rc=0
+2026-10-01 13:04:27,711 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=12 | rc=0
+2026-10-01 13:04:27,711 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=12 rc=0
+2026-10-01 13:04:27,712 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=10 | rc=0
+2026-10-01 13:04:27,712 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=10 rc=0
+2026-10-01 13:04:27,950 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:28,213 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=13 | rc=0
+2026-10-01 13:04:28,214 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=13 rc=0
+2026-10-01 13:04:28,214 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=11 | rc=0
+2026-10-01 13:04:28,215 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=11 rc=0
+2026-10-01 13:04:28,716 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=14 | rc=0
+2026-10-01 13:04:28,716 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=14 rc=0
+2026-10-01 13:04:28,718 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=12 | rc=0
+2026-10-01 13:04:28,720 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=12 rc=0
+2026-10-01 13:04:29,220 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=15 | rc=0
+2026-10-01 13:04:29,221 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=15 rc=0
+2026-10-01 13:04:29,222 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=13 | rc=0
+2026-10-01 13:04:29,223 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=13 rc=0
+2026-10-01 13:04:29,724 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=16 | rc=0
+2026-10-01 13:04:29,725 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=16 rc=0
+2026-10-01 13:04:29,726 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=14 | rc=0
+2026-10-01 13:04:29,727 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=14 rc=0
+2026-10-01 13:04:30,228 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=17 | rc=0
+2026-10-01 13:04:30,228 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=17 rc=0
+2026-10-01 13:04:30,229 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=15 | rc=0
+2026-10-01 13:04:30,231 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=15 rc=0
+2026-10-01 13:04:30,733 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=18 | rc=0
+2026-10-01 13:04:30,733 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=18 rc=0
+2026-10-01 13:04:30,734 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=16 | rc=0
+2026-10-01 13:04:30,736 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=16 rc=0
+2026-10-01 13:04:31,237 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=19 | rc=0
+2026-10-01 13:04:31,237 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=19 rc=0
+2026-10-01 13:04:31,238 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=17 | rc=0
+2026-10-01 13:04:31,239 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=17 rc=0
+2026-10-01 13:04:31,740 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=20 | rc=0
+2026-10-01 13:04:31,740 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=20 rc=0
+2026-10-01 13:04:31,741 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=18 | rc=0
+2026-10-01 13:04:31,741 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=18 rc=0
+2026-10-01 13:04:32,243 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=21 | rc=0
+2026-10-01 13:04:32,243 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=21 rc=0
+2026-10-01 13:04:32,244 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=19 | rc=0
+2026-10-01 13:04:32,245 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=19 rc=0
+2026-10-01 13:04:32,747 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=22 | rc=0
+2026-10-01 13:04:32,747 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=22 rc=0
+2026-10-01 13:04:32,748 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=20 | rc=0
+2026-10-01 13:04:32,750 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=20 rc=0
+2026-10-01 13:04:32,951 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:33,252 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=23 | rc=0
+2026-10-01 13:04:33,253 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=23 rc=0
+2026-10-01 13:04:33,254 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=21 | rc=0
+2026-10-01 13:04:33,254 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=21 rc=0
+2026-10-01 13:04:33,755 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=24 | rc=0
+2026-10-01 13:04:33,756 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=24 rc=0
+2026-10-01 13:04:33,757 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=22 | rc=0
+2026-10-01 13:04:33,759 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=22 rc=0
+2026-10-01 13:04:34,260 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=25 | rc=0
+2026-10-01 13:04:34,260 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=25 rc=0
+2026-10-01 13:04:34,261 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=23 | rc=0
+2026-10-01 13:04:34,262 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=23 rc=0
+2026-10-01 13:04:34,764 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=26 | rc=0
+2026-10-01 13:04:34,764 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=26 rc=0
+2026-10-01 13:04:34,765 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=24 | rc=0
+2026-10-01 13:04:34,766 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=24 rc=0
+2026-10-01 13:04:35,266 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=27 | rc=0
+2026-10-01 13:04:35,281 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=27 rc=0
+2026-10-01 13:04:35,293 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=25 | rc=0
+2026-10-01 13:04:35,300 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=25 rc=0
+2026-10-01 13:04:35,811 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=28 | rc=0
+2026-10-01 13:04:35,817 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=28 rc=0
+2026-10-01 13:04:35,821 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=26 | rc=0
+2026-10-01 13:04:35,824 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=26 rc=0
+2026-10-01 13:04:36,325 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=29 | rc=0
+2026-10-01 13:04:36,326 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=29 rc=0
+2026-10-01 13:04:36,327 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=27 | rc=0
+2026-10-01 13:04:36,327 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=27 rc=0
+2026-10-01 13:04:36,829 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=30 | rc=0
+2026-10-01 13:04:36,830 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=30 rc=0
+2026-10-01 13:04:36,830 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=28 | rc=0
+2026-10-01 13:04:36,831 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=28 rc=0
+2026-10-01 13:04:37,331 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=31 | rc=0
+2026-10-01 13:04:37,332 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=31 rc=0
+2026-10-01 13:04:37,332 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=29 | rc=0
+2026-10-01 13:04:37,333 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=29 rc=0
+2026-10-01 13:04:37,834 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=32 | rc=0
+2026-10-01 13:04:37,834 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=32 rc=0
+2026-10-01 13:04:37,834 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=30 | rc=0
+2026-10-01 13:04:37,835 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=30 rc=0
+2026-10-01 13:04:37,953 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:38,336 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=33 | rc=0
+2026-10-01 13:04:38,336 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=33 rc=0
+2026-10-01 13:04:38,337 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=31 | rc=0
+2026-10-01 13:04:38,337 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=31 rc=0
+2026-10-01 13:04:38,838 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=34 | rc=0
+2026-10-01 13:04:38,838 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=34 rc=0
+2026-10-01 13:04:38,839 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=32 | rc=0
+2026-10-01 13:04:38,840 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=32 rc=0
+2026-10-01 13:04:39,341 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=35 | rc=0
+2026-10-01 13:04:39,341 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=35 rc=0
+2026-10-01 13:04:39,342 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=33 | rc=0
+2026-10-01 13:04:39,342 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=33 rc=0
+2026-10-01 13:04:39,843 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=36 | rc=0
+2026-10-01 13:04:39,843 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=36 rc=0
+2026-10-01 13:04:39,844 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=34 | rc=0
+2026-10-01 13:04:39,844 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=34 rc=0
+2026-10-01 13:04:40,345 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=37 | rc=0
+2026-10-01 13:04:40,345 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=37 rc=0
+2026-10-01 13:04:40,347 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=35 | rc=0
+2026-10-01 13:04:40,347 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=35 rc=0
+2026-10-01 13:04:40,848 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=38 | rc=0
+2026-10-01 13:04:40,848 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=38 rc=0
+2026-10-01 13:04:40,849 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=36 | rc=0
+2026-10-01 13:04:40,850 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=36 rc=0
+2026-10-01 13:04:41,352 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=39 | rc=0
+2026-10-01 13:04:41,352 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=39 rc=0
+2026-10-01 13:04:41,353 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=37 | rc=0
+2026-10-01 13:04:41,353 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=37 rc=0
+2026-10-01 13:04:41,854 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=40 | rc=0
+2026-10-01 13:04:41,855 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=40 rc=0
+2026-10-01 13:04:41,856 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=38 | rc=0
+2026-10-01 13:04:41,857 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=38 rc=0
+2026-10-01 13:04:42,359 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=41 | rc=0
+2026-10-01 13:04:42,363 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=41 rc=0
+2026-10-01 13:04:42,363 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=39 | rc=0
+2026-10-01 13:04:42,364 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=39 rc=0
+2026-10-01 13:04:42,865 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=42 | rc=0
+2026-10-01 13:04:42,867 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=42 rc=0
+2026-10-01 13:04:42,868 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=40 | rc=0
+2026-10-01 13:04:42,869 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=40 rc=0
+2026-10-01 13:04:42,954 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:43,371 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=43 | rc=0
+2026-10-01 13:04:43,371 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=43 rc=0
+2026-10-01 13:04:43,372 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=41 | rc=0
+2026-10-01 13:04:43,372 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=41 rc=0
+2026-10-01 13:04:43,873 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=44 | rc=0
+2026-10-01 13:04:43,874 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=44 rc=0
+2026-10-01 13:04:43,875 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=42 | rc=0
+2026-10-01 13:04:43,875 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=42 rc=0
+2026-10-01 13:04:44,376 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=45 | rc=0
+2026-10-01 13:04:44,376 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=45 rc=0
+2026-10-01 13:04:44,377 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=43 | rc=0
+2026-10-01 13:04:44,377 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=43 rc=0
+2026-10-01 13:04:44,879 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=46 | rc=0
+2026-10-01 13:04:44,879 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=46 rc=0
+2026-10-01 13:04:44,880 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=44 | rc=0
+2026-10-01 13:04:44,880 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=44 rc=0
+2026-10-01 13:04:45,381 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=47 | rc=0
+2026-10-01 13:04:45,381 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=47 rc=0
+2026-10-01 13:04:45,382 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=45 | rc=0
+2026-10-01 13:04:45,383 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=45 rc=0
+2026-10-01 13:04:45,884 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=48 | rc=0
+2026-10-01 13:04:45,884 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=48 rc=0
+2026-10-01 13:04:45,884 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=46 | rc=0
+2026-10-01 13:04:45,886 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=46 rc=0
+2026-10-01 13:04:46,386 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=49 | rc=0
+2026-10-01 13:04:46,387 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=49 rc=0
+2026-10-01 13:04:46,388 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=47 | rc=0
+2026-10-01 13:04:46,389 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=47 rc=0
+2026-10-01 13:04:46,890 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=50 | rc=0
+2026-10-01 13:04:46,891 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=50 rc=0
+2026-10-01 13:04:46,894 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=48 | rc=0
+2026-10-01 13:04:46,896 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=48 rc=0
+2026-10-01 13:04:47,397 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=51 | rc=0
+2026-10-01 13:04:47,403 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=51 rc=0
+2026-10-01 13:04:47,404 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=49 | rc=0
+2026-10-01 13:04:47,408 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=49 rc=0
+2026-10-01 13:04:47,910 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=52 | rc=0
+2026-10-01 13:04:47,911 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=52 rc=0
+2026-10-01 13:04:47,912 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=50 | rc=0
+2026-10-01 13:04:47,913 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=50 rc=0
+2026-10-01 13:04:47,955 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:48,414 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=53 | rc=0
+2026-10-01 13:04:48,414 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=53 rc=0
+2026-10-01 13:04:48,414 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=51 | rc=0
+2026-10-01 13:04:48,415 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=51 rc=0
+2026-10-01 13:04:48,916 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=54 | rc=0
+2026-10-01 13:04:48,917 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=54 rc=0
+2026-10-01 13:04:48,917 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=52 | rc=0
+2026-10-01 13:04:48,921 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=52 rc=0
+2026-10-01 13:04:49,422 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=55 | rc=0
+2026-10-01 13:04:49,422 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=55 rc=0
+2026-10-01 13:04:49,423 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=53 | rc=0
+2026-10-01 13:04:49,423 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=53 rc=0
+2026-10-01 13:04:49,924 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=56 | rc=0
+2026-10-01 13:04:49,925 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=56 rc=0
+2026-10-01 13:04:49,926 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=54 | rc=0
+2026-10-01 13:04:49,926 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=54 rc=0
+2026-10-01 13:04:50,427 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=57 | rc=0
+2026-10-01 13:04:50,428 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=57 rc=0
+2026-10-01 13:04:50,430 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=55 | rc=0
+2026-10-01 13:04:50,433 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=55 rc=0
+2026-10-01 13:04:50,934 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=58 | rc=0
+2026-10-01 13:04:50,934 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=58 rc=0
+2026-10-01 13:04:50,935 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=56 | rc=0
+2026-10-01 13:04:50,935 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=56 rc=0
+2026-10-01 13:04:51,436 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=59 | rc=0
+2026-10-01 13:04:51,436 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=59 rc=0
+2026-10-01 13:04:51,436 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=57 | rc=0
+2026-10-01 13:04:51,437 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=57 rc=0
+2026-10-01 13:04:51,938 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=60 | rc=0
+2026-10-01 13:04:51,939 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=60 rc=0
+2026-10-01 13:04:51,939 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=58 | rc=0
+2026-10-01 13:04:51,940 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=58 rc=0
+2026-10-01 13:04:52,441 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=61 | rc=0
+2026-10-01 13:04:52,441 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=61 rc=0
+2026-10-01 13:04:52,442 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=59 | rc=0
+2026-10-01 13:04:52,443 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=59 rc=0
+2026-10-01 13:04:52,944 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=62 | rc=0
+2026-10-01 13:04:52,944 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=62 rc=0
+2026-10-01 13:04:52,945 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=60 | rc=0
+2026-10-01 13:04:52,946 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=60 rc=0
+2026-10-01 13:04:52,956 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:53,447 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=63 | rc=0
+2026-10-01 13:04:53,448 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=63 rc=0
+2026-10-01 13:04:53,448 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=61 | rc=0
+2026-10-01 13:04:53,449 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=61 rc=0
+2026-10-01 13:04:53,950 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=64 | rc=0
+2026-10-01 13:04:53,950 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=64 rc=0
+2026-10-01 13:04:53,951 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=62 | rc=0
+2026-10-01 13:04:53,952 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=62 rc=0
+2026-10-01 13:04:54,453 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=65 | rc=0
+2026-10-01 13:04:54,453 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=65 rc=0
+2026-10-01 13:04:54,456 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=63 | rc=0
+2026-10-01 13:04:54,456 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=63 rc=0
+2026-10-01 13:04:54,961 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=66 | rc=0
+2026-10-01 13:04:54,961 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=66 rc=0
+2026-10-01 13:04:54,962 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=64 | rc=0
+2026-10-01 13:04:54,963 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=64 rc=0
+2026-10-01 13:04:55,463 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=67 | rc=0
+2026-10-01 13:04:55,464 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=67 rc=0
+2026-10-01 13:04:55,465 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=65 | rc=0
+2026-10-01 13:04:55,465 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=65 rc=0
+2026-10-01 13:04:55,965 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=68 | rc=0
+2026-10-01 13:04:55,966 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=68 rc=0
+2026-10-01 13:04:55,967 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=66 | rc=0
+2026-10-01 13:04:55,967 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=66 rc=0
+2026-10-01 13:04:56,468 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=69 | rc=0
+2026-10-01 13:04:56,468 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=69 rc=0
+2026-10-01 13:04:56,469 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=67 | rc=0
+2026-10-01 13:04:56,469 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=67 rc=0
+2026-10-01 13:04:56,970 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=70 | rc=0
+2026-10-01 13:04:56,971 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=70 rc=0
+2026-10-01 13:04:56,971 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=68 | rc=0
+2026-10-01 13:04:56,972 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=68 rc=0
+2026-10-01 13:04:57,472 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=71 | rc=0
+2026-10-01 13:04:57,473 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=71 rc=0
+2026-10-01 13:04:57,473 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=69 | rc=0
+2026-10-01 13:04:57,474 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=69 rc=0
+2026-10-01 13:04:57,957 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:04:57,975 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=72 | rc=0
+2026-10-01 13:04:57,978 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=72 rc=0
+2026-10-01 13:04:57,978 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=70 | rc=0
+2026-10-01 13:04:57,980 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=70 rc=0
+2026-10-01 13:04:58,481 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=73 | rc=0
+2026-10-01 13:04:58,481 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=73 rc=0
+2026-10-01 13:04:58,482 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=71 | rc=0
+2026-10-01 13:04:58,484 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=71 rc=0
+2026-10-01 13:04:58,984 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=74 | rc=0
+2026-10-01 13:04:58,985 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=74 rc=0
+2026-10-01 13:04:58,985 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=72 | rc=0
+2026-10-01 13:04:58,986 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=72 rc=0
+2026-10-01 13:04:59,488 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=75 | rc=0
+2026-10-01 13:04:59,488 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=75 rc=0
+2026-10-01 13:04:59,489 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=73 | rc=0
+2026-10-01 13:04:59,490 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=73 rc=0
+2026-10-01 13:04:59,994 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=76 | rc=0
+2026-10-01 13:04:59,994 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=76 rc=0
+2026-10-01 13:04:59,995 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=74 | rc=0
+2026-10-01 13:04:59,995 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=74 rc=0
+2026-10-01 13:05:00,496 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=77 | rc=0
+2026-10-01 13:05:00,496 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=77 rc=0
+2026-10-01 13:05:00,497 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=75 | rc=0
+2026-10-01 13:05:00,497 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=75 rc=0
+2026-10-01 13:05:00,998 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=78 | rc=0
+2026-10-01 13:05:00,999 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=78 rc=0
+2026-10-01 13:05:00,999 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=76 | rc=0
+2026-10-01 13:05:01,000 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=76 rc=0
+2026-10-01 13:05:01,500 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=79 | rc=0
+2026-10-01 13:05:01,501 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=79 rc=0
+2026-10-01 13:05:01,502 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=77 | rc=0
+2026-10-01 13:05:01,502 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=77 rc=0
+2026-10-01 13:05:02,003 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=80 | rc=0
+2026-10-01 13:05:02,003 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=80 rc=0
+2026-10-01 13:05:02,004 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=78 | rc=0
+2026-10-01 13:05:02,004 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=78 rc=0
+2026-10-01 13:05:02,505 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=81 | rc=0
+2026-10-01 13:05:02,506 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=81 rc=0
+2026-10-01 13:05:02,507 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=79 | rc=0
+2026-10-01 13:05:02,508 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=79 rc=0
+2026-10-01 13:05:02,961 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:03,009 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=82 | rc=0
+2026-10-01 13:05:03,009 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=82 rc=0
+2026-10-01 13:05:03,009 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=80 | rc=0
+2026-10-01 13:05:03,010 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=80 rc=0
+2026-10-01 13:05:03,510 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=83 | rc=0
+2026-10-01 13:05:03,514 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=83 rc=0
+2026-10-01 13:05:03,515 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=81 | rc=0
+2026-10-01 13:05:03,520 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=81 rc=0
+2026-10-01 13:05:04,021 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=84 | rc=0
+2026-10-01 13:05:04,021 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=84 rc=0
+2026-10-01 13:05:04,021 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=82 | rc=0
+2026-10-01 13:05:04,021 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=82 rc=0
+2026-10-01 13:05:04,530 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=85 | rc=0
+2026-10-01 13:05:04,530 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=85 rc=0
+2026-10-01 13:05:04,531 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=83 | rc=0
+2026-10-01 13:05:04,536 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=83 rc=0
+2026-10-01 13:05:05,042 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=86 | rc=0
+2026-10-01 13:05:05,044 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=86 rc=0
+2026-10-01 13:05:05,045 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=84 | rc=0
+2026-10-01 13:05:05,054 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=84 rc=0
+2026-10-01 13:05:05,555 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=87 | rc=0
+2026-10-01 13:05:05,559 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=87 rc=0
+2026-10-01 13:05:05,559 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=85 | rc=0
+2026-10-01 13:05:05,562 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=85 rc=0
+2026-10-01 13:05:06,063 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=88 | rc=0
+2026-10-01 13:05:06,064 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=88 rc=0
+2026-10-01 13:05:06,065 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=86 | rc=0
+2026-10-01 13:05:06,066 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=86 rc=0
+2026-10-01 13:05:06,569 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=89 | rc=0
+2026-10-01 13:05:06,569 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=89 rc=0
+2026-10-01 13:05:06,570 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=87 | rc=0
+2026-10-01 13:05:06,572 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=87 rc=0
+2026-10-01 13:05:07,073 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=90 | rc=0
+2026-10-01 13:05:07,074 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=90 rc=0
+2026-10-01 13:05:07,075 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=88 | rc=0
+2026-10-01 13:05:07,076 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=88 rc=0
+2026-10-01 13:05:07,577 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=91 | rc=0
+2026-10-01 13:05:07,577 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=91 rc=0
+2026-10-01 13:05:07,579 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=89 | rc=0
+2026-10-01 13:05:07,580 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=89 rc=0
+2026-10-01 13:05:07,965 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:08,080 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=92 | rc=0
+2026-10-01 13:05:08,081 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=92 rc=0
+2026-10-01 13:05:08,082 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=90 | rc=0
+2026-10-01 13:05:08,083 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=90 rc=0
+2026-10-01 13:05:08,585 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=93 | rc=0
+2026-10-01 13:05:08,586 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=93 rc=0
+2026-10-01 13:05:08,587 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=91 | rc=0
+2026-10-01 13:05:08,587 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=91 rc=0
+2026-10-01 13:05:09,088 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=94 | rc=0
+2026-10-01 13:05:09,088 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=94 rc=0
+2026-10-01 13:05:09,089 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=92 | rc=0
+2026-10-01 13:05:09,090 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=92 rc=0
+2026-10-01 13:05:09,591 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=95 | rc=0
+2026-10-01 13:05:09,591 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=95 rc=0
+2026-10-01 13:05:09,591 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=93 | rc=0
+2026-10-01 13:05:09,595 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=93 rc=0
+2026-10-01 13:05:10,096 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=96 | rc=0
+2026-10-01 13:05:10,097 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=96 rc=0
+2026-10-01 13:05:10,100 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=94 | rc=0
+2026-10-01 13:05:10,100 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=94 rc=0
+2026-10-01 13:05:10,601 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=97 | rc=0
+2026-10-01 13:05:10,601 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=97 rc=0
+2026-10-01 13:05:10,602 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=95 | rc=0
+2026-10-01 13:05:10,602 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=95 rc=0
+2026-10-01 13:05:11,103 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=98 | rc=0
+2026-10-01 13:05:11,103 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=98 rc=0
+2026-10-01 13:05:11,104 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=96 | rc=0
+2026-10-01 13:05:11,104 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=96 rc=0
+2026-10-01 13:05:11,605 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=99 | rc=0
+2026-10-01 13:05:11,605 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=99 rc=0
+2026-10-01 13:05:11,606 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=97 | rc=0
+2026-10-01 13:05:11,606 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=97 rc=0
+2026-10-01 13:05:12,107 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=100 | rc=0
+2026-10-01 13:05:12,107 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=100 rc=0
+2026-10-01 13:05:12,108 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=98 | rc=0
+2026-10-01 13:05:12,108 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=98 rc=0
+2026-10-01 13:05:12,609 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=101 | rc=0
+2026-10-01 13:05:12,610 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=101 rc=0
+2026-10-01 13:05:12,610 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=99 | rc=0
+2026-10-01 13:05:12,610 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=99 rc=0
+2026-10-01 13:05:12,967 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:13,111 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=102 | rc=0
+2026-10-01 13:05:13,112 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=102 rc=0
+2026-10-01 13:05:13,112 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=100 | rc=0
+2026-10-01 13:05:13,113 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=100 rc=0
+2026-10-01 13:05:13,614 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=103 | rc=0
+2026-10-01 13:05:13,615 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=103 rc=0
+2026-10-01 13:05:13,615 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=101 | rc=0
+2026-10-01 13:05:13,616 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=101 rc=0
+2026-10-01 13:05:14,116 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=104 | rc=0
+2026-10-01 13:05:14,117 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=104 rc=0
+2026-10-01 13:05:14,117 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=102 | rc=0
+2026-10-01 13:05:14,118 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=102 rc=0
+2026-10-01 13:05:14,619 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=105 | rc=0
+2026-10-01 13:05:14,619 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=105 rc=0
+2026-10-01 13:05:14,620 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=103 | rc=0
+2026-10-01 13:05:14,621 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=103 rc=0
+2026-10-01 13:05:15,121 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=106 | rc=0
+2026-10-01 13:05:15,122 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=106 rc=0
+2026-10-01 13:05:15,123 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=104 | rc=0
+2026-10-01 13:05:15,125 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=104 rc=0
+2026-10-01 13:05:15,626 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=107 | rc=0
+2026-10-01 13:05:15,627 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=107 rc=0
+2026-10-01 13:05:15,627 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=105 | rc=0
+2026-10-01 13:05:15,628 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=105 rc=0
+2026-10-01 13:05:16,129 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=108 | rc=0
+2026-10-01 13:05:16,129 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=108 rc=0
+2026-10-01 13:05:16,131 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=106 | rc=0
+2026-10-01 13:05:16,132 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=106 rc=0
+2026-10-01 13:05:16,633 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=109 | rc=0
+2026-10-01 13:05:16,633 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=109 rc=0
+2026-10-01 13:05:16,634 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=107 | rc=0
+2026-10-01 13:05:16,634 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=107 rc=0
+2026-10-01 13:05:17,135 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=110 | rc=0
+2026-10-01 13:05:17,136 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=110 rc=0
+2026-10-01 13:05:17,136 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=108 | rc=0
+2026-10-01 13:05:17,137 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=108 rc=0
+2026-10-01 13:05:17,638 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=111 | rc=0
+2026-10-01 13:05:17,639 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=111 rc=0
+2026-10-01 13:05:17,639 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=109 | rc=0
+2026-10-01 13:05:17,640 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=109 rc=0
+2026-10-01 13:05:17,968 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:18,141 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=112 | rc=0
+2026-10-01 13:05:18,141 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=112 rc=0
+2026-10-01 13:05:18,142 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=110 | rc=0
+2026-10-01 13:05:18,143 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=110 rc=0
+2026-10-01 13:05:18,644 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=113 | rc=0
+2026-10-01 13:05:18,644 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=113 rc=0
+2026-10-01 13:05:18,644 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=111 | rc=0
+2026-10-01 13:05:18,645 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=111 rc=0
+2026-10-01 13:05:19,146 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=114 | rc=0
+2026-10-01 13:05:19,147 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=114 rc=0
+2026-10-01 13:05:19,147 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=112 | rc=0
+2026-10-01 13:05:19,148 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=112 rc=0
+2026-10-01 13:05:19,648 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=115 | rc=0
+2026-10-01 13:05:19,649 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=115 rc=0
+2026-10-01 13:05:19,649 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=113 | rc=0
+2026-10-01 13:05:19,651 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=113 rc=0
+2026-10-01 13:05:20,152 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=116 | rc=0
+2026-10-01 13:05:20,153 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=116 rc=0
+2026-10-01 13:05:20,155 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=114 | rc=0
+2026-10-01 13:05:20,155 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=114 rc=0
+2026-10-01 13:05:20,656 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=117 | rc=0
+2026-10-01 13:05:20,656 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=117 rc=0
+2026-10-01 13:05:20,657 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=115 | rc=0
+2026-10-01 13:05:20,658 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=115 rc=0
+2026-10-01 13:05:21,159 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=118 | rc=0
+2026-10-01 13:05:21,159 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=118 rc=0
+2026-10-01 13:05:21,161 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=116 | rc=0
+2026-10-01 13:05:21,162 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=116 rc=0
+2026-10-01 13:05:21,664 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=119 | rc=0
+2026-10-01 13:05:21,664 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=119 rc=0
+2026-10-01 13:05:21,665 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=117 | rc=0
+2026-10-01 13:05:21,666 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=117 rc=0
+2026-10-01 13:05:22,167 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=120 | rc=0
+2026-10-01 13:05:22,168 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=120 rc=0
+2026-10-01 13:05:22,168 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=118 | rc=0
+2026-10-01 13:05:22,170 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=118 rc=0
+2026-10-01 13:05:22,671 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=121 | rc=0
+2026-10-01 13:05:22,671 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=121 rc=0
+2026-10-01 13:05:22,672 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=119 | rc=0
+2026-10-01 13:05:22,673 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=119 rc=0
+2026-10-01 13:05:22,969 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:23,173 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=122 | rc=0
+2026-10-01 13:05:23,174 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=122 rc=0
+2026-10-01 13:05:23,175 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=120 | rc=0
+2026-10-01 13:05:23,175 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=120 rc=0
+2026-10-01 13:05:23,677 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=123 | rc=0
+2026-10-01 13:05:23,678 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=123 rc=0
+2026-10-01 13:05:23,678 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=121 | rc=0
+2026-10-01 13:05:23,680 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=121 rc=0
+2026-10-01 13:05:24,181 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=124 | rc=0
+2026-10-01 13:05:24,181 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=124 rc=0
+2026-10-01 13:05:24,182 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=122 | rc=0
+2026-10-01 13:05:24,182 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=122 rc=0
+2026-10-01 13:05:24,683 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=125 | rc=0
+2026-10-01 13:05:24,683 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=125 rc=0
+2026-10-01 13:05:24,684 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=123 | rc=0
+2026-10-01 13:05:24,685 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=123 rc=0
+2026-10-01 13:05:25,186 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=126 | rc=0
+2026-10-01 13:05:25,186 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=126 rc=0
+2026-10-01 13:05:25,187 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=124 | rc=0
+2026-10-01 13:05:25,187 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=124 rc=0
+2026-10-01 13:05:25,689 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=127 | rc=0
+2026-10-01 13:05:25,690 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=127 rc=0
+2026-10-01 13:05:25,691 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=125 | rc=0
+2026-10-01 13:05:25,691 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=125 rc=0
+2026-10-01 13:05:26,192 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=128 | rc=0
+2026-10-01 13:05:26,192 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=128 rc=0
+2026-10-01 13:05:26,193 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=126 | rc=0
+2026-10-01 13:05:26,194 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=126 rc=0
+2026-10-01 13:05:26,695 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=129 | rc=0
+2026-10-01 13:05:26,697 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=129 rc=0
+2026-10-01 13:05:26,698 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=127 | rc=0
+2026-10-01 13:05:26,698 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=127 rc=0
+2026-10-01 13:05:27,200 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=130 | rc=0
+2026-10-01 13:05:27,200 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=130 rc=0
+2026-10-01 13:05:27,200 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=128 | rc=0
+2026-10-01 13:05:27,201 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=128 rc=0
+2026-10-01 13:05:27,701 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=131 | rc=0
+2026-10-01 13:05:27,702 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=131 rc=0
+2026-10-01 13:05:27,702 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=129 | rc=0
+2026-10-01 13:05:27,704 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=129 rc=0
+2026-10-01 13:05:27,972 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:28,206 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=132 | rc=0
+2026-10-01 13:05:28,206 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=132 rc=0
+2026-10-01 13:05:28,207 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=130 | rc=0
+2026-10-01 13:05:28,208 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=130 rc=0
+2026-10-01 13:05:28,709 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=133 | rc=0
+2026-10-01 13:05:28,710 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=133 rc=0
+2026-10-01 13:05:28,711 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=131 | rc=0
+2026-10-01 13:05:28,711 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=131 rc=0
+2026-10-01 13:05:29,213 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=134 | rc=0
+2026-10-01 13:05:29,213 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=134 rc=0
+2026-10-01 13:05:29,214 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=132 | rc=0
+2026-10-01 13:05:29,215 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=132 rc=0
+2026-10-01 13:05:29,716 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=135 | rc=0
+2026-10-01 13:05:29,716 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=135 rc=0
+2026-10-01 13:05:29,717 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=133 | rc=0
+2026-10-01 13:05:29,717 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=133 rc=0
+2026-10-01 13:05:30,219 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=136 | rc=0
+2026-10-01 13:05:30,221 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=136 rc=0
+2026-10-01 13:05:30,221 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=134 | rc=0
+2026-10-01 13:05:30,225 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=134 rc=0
+2026-10-01 13:05:30,727 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=137 | rc=0
+2026-10-01 13:05:30,729 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=137 rc=0
+2026-10-01 13:05:30,733 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=135 | rc=0
+2026-10-01 13:05:30,734 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=135 rc=0
+2026-10-01 13:05:31,235 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=138 | rc=0
+2026-10-01 13:05:31,236 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=138 rc=0
+2026-10-01 13:05:31,236 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=136 | rc=0
+2026-10-01 13:05:31,237 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=136 rc=0
+2026-10-01 13:05:31,738 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=139 | rc=0
+2026-10-01 13:05:31,739 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=139 rc=0
+2026-10-01 13:05:31,739 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=137 | rc=0
+2026-10-01 13:05:31,741 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=137 rc=0
+2026-10-01 13:05:32,245 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=140 | rc=0
+2026-10-01 13:05:32,246 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=140 rc=0
+2026-10-01 13:05:32,250 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=138 | rc=0
+2026-10-01 13:05:32,251 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=138 rc=0
+2026-10-01 13:05:32,752 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=141 | rc=0
+2026-10-01 13:05:32,752 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=141 rc=0
+2026-10-01 13:05:32,753 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=139 | rc=0
+2026-10-01 13:05:32,753 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=139 rc=0
+2026-10-01 13:05:32,976 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:33,254 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=142 | rc=0
+2026-10-01 13:05:33,255 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=142 rc=0
+2026-10-01 13:05:33,255 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=140 | rc=0
+2026-10-01 13:05:33,256 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=140 rc=0
+2026-10-01 13:05:33,757 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=143 | rc=0
+2026-10-01 13:05:33,758 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=143 rc=0
+2026-10-01 13:05:33,759 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=141 | rc=0
+2026-10-01 13:05:33,760 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=141 rc=0
+2026-10-01 13:05:34,260 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=144 | rc=0
+2026-10-01 13:05:34,261 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=144 rc=0
+2026-10-01 13:05:34,262 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=142 | rc=0
+2026-10-01 13:05:34,262 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=142 rc=0
+2026-10-01 13:05:34,763 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=145 | rc=0
+2026-10-01 13:05:34,764 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=145 rc=0
+2026-10-01 13:05:34,765 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=143 | rc=0
+2026-10-01 13:05:34,766 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=143 rc=0
+2026-10-01 13:05:35,268 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=146 | rc=0
+2026-10-01 13:05:35,270 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=146 rc=0
+2026-10-01 13:05:35,270 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=144 | rc=0
+2026-10-01 13:05:35,274 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=144 rc=0
+2026-10-01 13:05:35,775 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=147 | rc=0
+2026-10-01 13:05:35,776 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=147 rc=0
+2026-10-01 13:05:35,777 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=145 | rc=0
+2026-10-01 13:05:35,778 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=145 rc=0
+2026-10-01 13:05:36,279 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=148 | rc=0
+2026-10-01 13:05:36,279 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=148 rc=0
+2026-10-01 13:05:36,281 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=146 | rc=0
+2026-10-01 13:05:36,281 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=146 rc=0
+2026-10-01 13:05:36,782 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=149 | rc=0
+2026-10-01 13:05:36,782 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=149 rc=0
+2026-10-01 13:05:36,783 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=147 | rc=0
+2026-10-01 13:05:36,783 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=147 rc=0
+2026-10-01 13:05:37,284 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=150 | rc=0
+2026-10-01 13:05:37,284 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=150 rc=0
+2026-10-01 13:05:37,285 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=148 | rc=0
+2026-10-01 13:05:37,285 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=148 rc=0
+2026-10-01 13:05:37,786 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=151 | rc=0
+2026-10-01 13:05:37,788 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=151 rc=0
+2026-10-01 13:05:37,790 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=149 | rc=0
+2026-10-01 13:05:37,791 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=149 rc=0
+2026-10-01 13:05:37,977 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:38,292 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=152 | rc=0
+2026-10-01 13:05:38,292 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=152 rc=0
+2026-10-01 13:05:38,293 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=150 | rc=0
+2026-10-01 13:05:38,294 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=150 rc=0
+2026-10-01 13:05:38,795 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=153 | rc=0
+2026-10-01 13:05:38,795 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=153 rc=0
+2026-10-01 13:05:38,796 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=151 | rc=0
+2026-10-01 13:05:38,797 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=151 rc=0
+2026-10-01 13:05:39,298 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=154 | rc=0
+2026-10-01 13:05:39,299 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=154 rc=0
+2026-10-01 13:05:39,299 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=152 | rc=0
+2026-10-01 13:05:39,300 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=152 rc=0
+2026-10-01 13:05:39,801 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=155 | rc=0
+2026-10-01 13:05:39,801 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=155 rc=0
+2026-10-01 13:05:39,802 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=153 | rc=0
+2026-10-01 13:05:39,802 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=153 rc=0
+2026-10-01 13:05:40,303 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=156 | rc=0
+2026-10-01 13:05:40,303 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=156 rc=0
+2026-10-01 13:05:40,304 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=154 | rc=0
+2026-10-01 13:05:40,304 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=154 rc=0
+2026-10-01 13:05:40,805 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=157 | rc=0
+2026-10-01 13:05:40,805 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=157 rc=0
+2026-10-01 13:05:40,806 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=155 | rc=0
+2026-10-01 13:05:40,807 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=155 rc=0
+2026-10-01 13:05:41,308 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=158 | rc=0
+2026-10-01 13:05:41,309 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=158 rc=0
+2026-10-01 13:05:41,310 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=156 | rc=0
+2026-10-01 13:05:41,311 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=156 rc=0
+2026-10-01 13:05:41,812 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=159 | rc=0
+2026-10-01 13:05:41,812 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=159 rc=0
+2026-10-01 13:05:41,813 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=157 | rc=0
+2026-10-01 13:05:41,814 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=157 rc=0
+2026-10-01 13:05:42,315 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=160 | rc=0
+2026-10-01 13:05:42,315 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=160 rc=0
+2026-10-01 13:05:42,317 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=158 | rc=0
+2026-10-01 13:05:42,317 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=158 rc=0
+2026-10-01 13:05:42,818 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=161 | rc=0
+2026-10-01 13:05:42,819 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=161 rc=0
+2026-10-01 13:05:42,819 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=159 | rc=0
+2026-10-01 13:05:42,820 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=159 rc=0
+2026-10-01 13:05:42,978 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:43,321 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=162 | rc=0
+2026-10-01 13:05:43,322 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=162 rc=0
+2026-10-01 13:05:43,323 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=160 | rc=0
+2026-10-01 13:05:43,325 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=160 rc=0
+2026-10-01 13:05:43,826 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=163 | rc=0
+2026-10-01 13:05:43,826 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=163 rc=0
+2026-10-01 13:05:43,827 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=161 | rc=0
+2026-10-01 13:05:43,827 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=161 rc=0
+2026-10-01 13:05:44,328 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=164 | rc=0
+2026-10-01 13:05:44,329 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=164 rc=0
+2026-10-01 13:05:44,329 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=162 | rc=0
+2026-10-01 13:05:44,330 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=162 rc=0
+2026-10-01 13:05:44,831 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=165 | rc=0
+2026-10-01 13:05:44,831 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=165 rc=0
+2026-10-01 13:05:44,832 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=163 | rc=0
+2026-10-01 13:05:44,832 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=163 rc=0
+2026-10-01 13:05:45,333 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=166 | rc=0
+2026-10-01 13:05:45,334 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=166 rc=0
+2026-10-01 13:05:45,334 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=164 | rc=0
+2026-10-01 13:05:45,336 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=164 rc=0
+2026-10-01 13:05:45,837 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=167 | rc=0
+2026-10-01 13:05:45,838 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=167 rc=0
+2026-10-01 13:05:45,838 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=165 | rc=0
+2026-10-01 13:05:45,839 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=165 rc=0
+2026-10-01 13:05:46,340 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=168 | rc=0
+2026-10-01 13:05:46,340 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=168 rc=0
+2026-10-01 13:05:46,341 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=166 | rc=0
+2026-10-01 13:05:46,341 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=166 rc=0
+2026-10-01 13:05:46,842 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=169 | rc=0
+2026-10-01 13:05:46,842 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=169 rc=0
+2026-10-01 13:05:46,843 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=167 | rc=0
+2026-10-01 13:05:46,844 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=167 rc=0
+2026-10-01 13:05:47,345 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=170 | rc=0
+2026-10-01 13:05:47,345 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=170 rc=0
+2026-10-01 13:05:47,346 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=168 | rc=0
+2026-10-01 13:05:47,346 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=168 rc=0
+2026-10-01 13:05:47,847 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=171 | rc=0
+2026-10-01 13:05:47,848 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=171 rc=0
+2026-10-01 13:05:47,849 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=169 | rc=0
+2026-10-01 13:05:47,850 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=169 rc=0
+2026-10-01 13:05:47,980 INFO [MQTT CURRENT STATE] Connected | run=1 | dropped_messages=0 | stale_messages=0
+2026-10-01 13:05:48,350 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=172 | rc=0
+2026-10-01 13:05:48,352 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=172 rc=0
+2026-10-01 13:05:48,352 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=170 | rc=0
+2026-10-01 13:05:48,353 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=170 rc=0
+2026-10-01 13:05:48,854 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=173 | rc=0
+2026-10-01 13:05:48,854 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=173 rc=0
+2026-10-01 13:05:48,855 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=171 | rc=0
+2026-10-01 13:05:48,855 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=171 rc=0
+2026-10-01 13:05:49,357 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/USV1/report | team=RMKE | vehicle=USV1 | run=1 | seq=174 | rc=0
+2026-10-01 13:05:49,357 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/USV1/report vehicle=USV1 seq=174 rc=0
+2026-10-01 13:05:49,358 INFO MQTT TX queued | topic=robocommand/robotx/RMKE/UAV1/report | team=RMKE | vehicle=UAV1 | run=1 | seq=172 | rc=0
+2026-10-01 13:05:49,359 INFO [PUBLISH] queued topic=robocommand/robotx/RMKE/UAV1/report vehicle=UAV1 seq=172 rc=0
+2026-10-01 13:05:49,475 INFO 
+2026-10-01 13:05:49,475 INFO Stopping AQUAHOLICS OCS...
+2026-10-01 13:05:49,477 WARNING [MQTT STATUS] Disconnected | application stopping
+2026-10-01 13:05:49,477 INFO MQTT disconnected normally | reason=Normal disconnection
+2026-10-01 13:05:49,477 INFO [MQTT] Normal disconnection
+2026-10-01 13:05:49,478 INFO MQTT disconnected
